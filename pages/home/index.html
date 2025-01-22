@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>Document</title>
 </head>
 
@@ -261,10 +260,9 @@
                 a traditional
             </span><span>car rental</span>
         </div>
-
-        <div class="slider swiper">
-            <div class="list swiper-wrapper">
-                <div class="card swiper-slide">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
                     <img src="../../assets/images/home/car-home-1.png" alt="car">
                     <div class="title">
                         Standard SUV
@@ -274,8 +272,8 @@
                         cruising around town or your next adventure.
                     </div>
                 </div>
-                <div class="card swiper-slide">
-                    <img src="../../assets/images/home/car-home-1.png" alt="car">
+                <div class="item">
+                    <img src="../../assets/images/home/car-home-2.png" alt="car">
                     <div class="title">
                         Standard SUV
                     </div>
@@ -284,8 +282,8 @@
                         cruising around town or your next adventure.
                     </div>
                 </div>
-                <div class="card swiper-slide">
-                    <img src="../../assets/images/home/car-home-1.png" alt="car">
+                <div class="item">
+                    <img src="../../assets/images/home/car-home-3.png" alt="car">
                     <div class="title">
                         Standard SUV
                     </div>
@@ -295,20 +293,162 @@
                     </div>
                 </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <!-- button prev and next -->
+            <div class="buttons">
+                <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <!-- dots -->
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
+        <div class="btn">View all available vehicles</div>
     </section>
     <!-- section-6 -->
+     <div class="gap"></div>
+     <div class="gap"></div>
+    <!-- section-7 -->
+    <section class="section-3">
+        <img class="car-header" src="../../assets/images/home/white-car.png" alt="car-black-header">
+        <svg class="svg-2" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%"
+            viewBox="0 0 1600 406">
+            <path style="fill:#ffca08"
+                d="M1608.03,417H-1.709L-3.493,267.327c76.974,52.083,173.369,106.4,262.948,114.816,82.7,7.772,175.138-15.857,175.138-15.857,296.27-61.5,450.55-323.851,772.167-357.194,146.02-12.5,299.07,11.613,401.05,33.813Z">
+            </path>
+            <path style="fill:#ffca08"
+                d="M-2.25,405.5H1607.5l1-248.5S1498.97,67.09,1199,82.5C952.453,84.455,717.723,320.6,424,369c0,0-91,17-172,11-87.435-6.475-177.172-39.147-255.516-77.726Z">
+            </path>
+            <path style="fill:#1c1601"
+                d="M-5.143,340.337C87.619,364.359,200.042,380.486,309,381c298.183,1.4,631.464-245.093,878-242,244.99,3.074,420.5,129,420.5,129V410H-4.75Z">
+            </path>
+        </svg>
+        <div class="gap" style="background-color: #1c1601; margin-top: -10px;"></div>
+        <div class="gap" style="background-color: #1c1601;"></div>
+    </section>
+    <!-- section-7 -->
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- section-8 -->
+     <section class="section-8">
+        <div class="text-question">
+            Find your car in one of our
+        </div>
+        <div class="title">
+            <span>
+                Find the perfect rental car <br>
+                We compare car rental prices, 
+            </span><span>you save!</span>
+        </div>
+        <ul>
+            <li>
+                <p>145</p>
+                <span>Countries</span>
+            </li>
+            <li>
+                <p>10K</p>
+                <span>Locations</span>
+            </li>
+            <li>
+                <p>27+</p>
+                <span>Partners</span>
+            </li>
+            <li>
+                <p>38+</p>
+                <span>Languages</span>
+            </li>
+        </ul>
+        <div class="gap"></div>
+        <div class="gap"></div>
+     </section>
+    <!-- section-8 -->
+     
+    <!-- section-9 -->
+    <section class="section-5">
+        <div class="gap" style="background-color: #1c1601;"></div>
+        <img src="../../assets/images/home/yellow-car.png" alt="car-black-footer">
+        <svg class="svg-4" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%"
+            viewBox="0 0 1600 406" transform="scale(-1,-1)">
+            <path style="fill:#ffca08"
+                d="M1608.03,417H-1.709L-3.493,267.327c76.974,52.083,173.369,106.4,262.948,114.816,82.7,7.772,175.138-15.857,175.138-15.857,296.27-61.5,450.55-323.851,772.167-357.194,146.02-12.5,299.07,11.613,401.05,33.813Z">
+            </path>
+            <path style="fill:#ffca08"
+                d="M-2.25,405.5H1607.5l1-248.5S1498.97,67.09,1199,82.5C952.453,84.455,717.723,320.6,424,369c0,0-91,17-172,11-87.435-6.475-177.172-39.147-255.516-77.726Z">
+            </path>
+            <path style="fill:#1c1601"
+                d="M-5.143,340.337C87.619,364.359,200.042,380.486,309,381c298.183,1.4,631.464-245.093,878-242,244.99,3.074,420.5,129,420.5,129V410H-4.75Z">
+            </path>
+        </svg>
+    </section>
+    <!-- section-9 -->
+     <div class="gap"></div>
+     <div class="gap"></div>
+     <div class="gap"></div>
+     <div class="gap"></div>
+    <!-- section-10 -->
+    <section class="section-10">
+        <div class="card-1">
+            <div class="text-question">Our good testimonials</div>
+            <div class="title">
+                <span>
+                    See what said our <br>
+                    happy
+                </span><span>customers</span>
+            </div>
+        </div>
+        <div class="card-2">
+            <div class="item">
+                <p>
+                    "There are two types of people who will tell <br>
+                    you that you cannot make a difference in this <br>
+                    world: those who are afraid to try and those <br>
+                    who are afraid you will succeed."
+                </p>
+                <div class="img">
+                    <img src="../../assets/images/home/position-person-1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <div class="text-name">Mike Jordan</div>
+                    <div class="text-position">Teacher</div>
+                </div>
+                <img class="test-back" src="../../assets/images/home/test-back.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- section-10 -->
+     <div class="gap"></div>
+     <div class="gap"></div>
+     <div class="gap"></div>
+     <div class="gap"></div>
+    <!-- footer -->
+     <footer>
+        <img class="car-footer" src="../../assets/images/home/car-footer.png" alt="car-footer">
+        <ul class="social">
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-x-twitter"></i></li>
+            <li><i class="fa-brands fa-whatsapp"></i></li>
+            <li><i class="fa-brands fa-skype"></i></li>
+        </ul>
+        <svg class="svg-5" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 406">
+            <path style="fill:rgba(167,167,167,0.25)" d="M1608.03,417H-1.709L-3.493,267.327c76.974,52.083,173.369,106.4,262.948,114.816,82.7,7.772,175.138-15.857,175.138-15.857,296.27-61.5,450.55-323.851,772.167-357.194,146.02-12.5,299.07,11.613,401.05,33.813Z"></path>
+            <path style="fill:#ffca08" d="M-2.25,405.5H1607.5l1-248.5S1498.97,67.09,1199,82.5C952.453,84.455,717.723,320.6,424,369c0,0-91,17-172,11-87.435-6.475-177.172-39.147-255.516-77.726Z"></path>
+            <path style="fill:#1c1601" d="M-5.143,340.337C87.619,364.359,200.042,380.486,309,381c298.183,1.4,631.464-245.093,878-242,244.99,3.074,420.5,129,420.5,129V410H-4.75Z"></path>
+            </svg>
+
+            <div class="gap" style="background-color: #1c1601; margin-top: -10px;"></div>
+            <div class="gap" style="background-color: #1c1601;"></div>
+
+            <div class="card">
+                <img src="../../assets/images/home/mail-footer.png" alt="">
+                <div class="title">
+                    <span>Need a Car? Contact us now with </span><span>+1 (818) 123 456 789</span>
+                </div>
+            </div>
+            <img src="../../assets/images/home/logo-footer.png" alt="">
+            <p>Copyright © 2025 Xtra Theme. All Rights Reserved. Powered by WordPress.</p>
+     </footer>
+    <!-- footer -->
     <script src="./index.js"></script>
 </body>
 
