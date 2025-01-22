@@ -3,48 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Counter</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: #f4f4f4;
-            font-family: Arial, sans-serif;
-        }
-
-        .counter {
-            font-size: 5rem;
-            font-weight: bold;
-            color: #FF5733;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <div class="counter" data-target="1000">0</div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const counter = document.querySelector(".counter");
-            const target = +counter.getAttribute("data-target"); // Lấy giá trị mục tiêu
-            const increment = target / 200; // Tăng dần theo từng bước nhỏ (200 bước)
-
-            let current = 0;
-
-            function updateCounter() {
-                if (current < target) {
-                    current += increment;
-                    counter.textContent = Math.ceil(current); // Làm tròn số
-                    requestAnimationFrame(updateCounter); // Gọi lại hàm để tiếp tục tăng
-                } else {
-                    counter.textContent = target; // Đảm bảo số cuối cùng là chính xác
-                }
-            }
-
-            updateCounter();
-        });
-    </script>
+    <style>
+         .social{
+    display: flex;
+    gap:30px;
+    position: absolute;
+    right: 250px;
+    top: 0;
+}
+ .social li{
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    background-color: red;
+}
+ .social li:hover{
+    transform: scale(1.1);
+}
+    </style>
+     <ul class="social">
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
 </body>
 </html>
