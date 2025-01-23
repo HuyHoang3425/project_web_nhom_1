@@ -102,6 +102,32 @@ header .list-2 li:hover{
 .dropdown-child:hover .list-2{
     display: block;
 }
+.section-1{
+    background-image: url("../../assets/images/rent/background-1.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.section-1 .title{
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.section-1 .icon{
+    display: flex;
+    gap:10px;
+    color:#FFCA08;
+    margin-bottom: 80px;
+}
+.section-1 .icon p{
+    font-weight: 700;
+}
 /* footer */
 .svg-5{
     height: 200px;
