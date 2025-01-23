@@ -1,5 +1,5 @@
 export const Footer = `
- <footer>
+<footer>
         <img class="car-footer" src="../../assets/images/home/car-footer.png" alt="car-footer">
         <ul class="social">
             <li><i class="fa-brands fa-facebook-f"></i></li>
@@ -24,4 +24,5 @@ export const Footer = `
             </div>
             <img src="../../assets/images/home/logo-footer.png" alt="">
             <p>Copyright © 2025 Xtra Theme. All Rights Reserved. Powered by WordPress.</p>
-     </footer>`
+</footer>
+`

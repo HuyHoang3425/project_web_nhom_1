@@ -73,17 +73,25 @@
 }
 .section-2 .list-product .item ul{
     display: flex;
-    gap:30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding:10px 20px;
     position: absolute;
-    left:calc((100% - 148px)/2);
+    left:calc((100% - 208px)/2);
     bottom:50px;
     background-color: #FEFEFE;
-    border-radius: 20px;
+    border-radius: 30px;
     opacity: 0;
+}
+.section-2 .list-product .item ul i{
+    padding:10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.section-2 .list-product .item ul i:hover{
+    background-color: #FFCA08;
+    width: 100%;
 }
 .section-2 .list-product .item .price{
     display: flex;

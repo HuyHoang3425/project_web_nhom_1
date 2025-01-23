@@ -1,4 +1,4 @@
-export const headercss = `
+export const css = `
 header {
     display: flex;
     align-items: center;
@@ -11,18 +11,15 @@ header {
     border-radius: 60px;
     margin: 30px 100px;
 }
-
 header ul {
     display: flex;
     gap: 30px;
 }
-
 header a {
     font-size: 16px;
     font-weight: 500;
     color: #D9D9D9;
 }
-
 .btn {
     font-size: 18px;
     font-weight: 600;
@@ -35,6 +32,75 @@ header a {
 .btn:hover{
     background-color: rgba(0, 0, 0, 0);
     color:#FFCA08
+}
+header .dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header .dropdown:hover .list{
+    display: block;
+}
+header .list{
+    display: none;
+    border-top: 4px solid #FFCA08;
+    color:#ffffff;
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 200px;
+    background-color: #1F1A06;
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+
+}
+header .list .item{
+    margin-bottom:10px;
+    margin: 0 20px;
+    width: calc(100%-40px);
+    padding:10px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+header .list .item:hover{
+    color:#1c1601;
+    background-color: #FFCA08;
+}
+header .list .item:nth-child(3):hover .list-2{
+    display: block;
+    position: relative;
+}
+header .list-2{
+    display: none;
+    border-top: 4px solid #FFCA08;
+    color:#ffffff;
+    position: absolute;
+    top:55px;
+    left:100%;
+    width: 200px;
+    background-color: #1F1A06;
+    padding:20px 20px 0 20px;
+    border-radius: 0 0 20px 20px;
+    transition: all 1s ease-in-out;
+}
+header .list-2 li{
+    margin-bottom:10px;
+    width: 100%;
+    padding:10px;
+    border-radius: 20px;
+}
+header .list-2 li:hover{
+    color:#1c1601;
+    background-color: #FFCA08;
+    transition: all 0.3s ease-in-out;
+}
+.dropdown-child{
+    width: 100%;
+}
+.dropdown-child:hover .list-2{
+    display: block;
 }
 /* footer */
 .svg-5{
