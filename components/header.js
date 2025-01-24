@@ -3,11 +3,11 @@ export const Header =`
         <img src="../../assets/images/home/car-rental-logo.png" alt="logo">
         <nav>
             <ul>
-                <li><a href="http://127.0.0.1:5500/pages/home/index.html">Home</a></li>
+                <li><a class="showafter" href="http://127.0.0.1:5500/pages/home/index.html">Home</a></li>
                 <li><a href="http://127.0.0.1:5500/pages/rent/index.html">Rent</a></li>
-                <li><a href="#">Locations</a></li>
-                <li><a href="#">Gold Rewards</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="http://127.0.0.1:5500/pages/locations/index.html">Locations</a></li>
+                <li><a href="http://127.0.0.1:5500/pages/goldrewards/index.html">Gold Rewards</a></li>
+                <li><a href="http://127.0.0.1:5500/pages/about/index.html">About</a></li>
                 <li class="dropdown">
                     <a href="#">Pages</a>
                     <ul class="list">
@@ -24,7 +24,7 @@ export const Header =`
                         </div>
                     </ul>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="http://127.0.0.1:5500/pages/contact/index.html">Contact</a></li>
             </ul>
         </nav>
         <button class="btn">Request a Car</button>
@@ -32,7 +32,7 @@ export const Header =`
         <section class="section-1">
             <div class="title">Rent</div>
             <div class="icon">
-                <i class="fa-solid fa-house"></i>
+                <a href="http://127.0.0.1:5500/pages/home/index.html"><i class="fa-solid fa-house"></i></a>
                 <i class="fa-solid fa-angles-right"></i>
                 <p class="content">product</p>
             </div>

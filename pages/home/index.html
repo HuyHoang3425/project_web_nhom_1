@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -18,11 +18,11 @@
         <img src="../../assets/images/home/car-rental-logo.png" alt="logo">
         <nav>
             <ul>
-                <li><a href="http://127.0.0.1:5500/pages/home/index.html">Home</a></li>
+                <li><a class="showafter" href="http://127.0.0.1:5500/pages/home/index.html">Home</a></li>
                 <li><a href="http://127.0.0.1:5500/pages/rent/index.html">Rent</a></li>
-                <li><a href="#">Locations</a></li>
-                <li><a href="#">Gold Rewards</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="http://127.0.0.1:5500/pages/locations/index.html">Locations</a></li>
+                <li><a href="http://127.0.0.1:5500/pages/goldrewards/index.html">Gold Rewards</a></li>
+                <li><a href="http://127.0.0.1:5500/pages/about/index.html">About</a></li>
                 <li class="dropdown">
                     <a href="#">Pages</a>
                     <ul class="list">
@@ -39,7 +39,7 @@
                         </div>
                     </ul>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="http://127.0.0.1:5500/pages/contact/index.html">Contact</a></li>
             </ul>
         </nav>
         <button class="btn">Request a Car</button>
@@ -48,21 +48,30 @@
 
     <!-- section-1 -->
     <section class="section-1">
-        <div class="content">
-            <div class="subtitle">The best way of renting</div>
+        <div class="background-1 show">
+            <div class="content">
+                <div class="subtitle">The best way of renting</div>
+                <div class="title">
+                    <span>
+                        Best cars to make <br>
+                        Your </span><span>drive easy</span>
+                </div>
+                <div class="item-row">
+                    <button class="btn">Best Offers</button>
+                    <img class="play-video" src="../../assets/images/home/play-video.png" alt="playvideo">
+                    <div class="decs">How it works</div>
+                </div>
+            </div>
+            <img class="text-blur" src="../../assets/images/home/car-rental-layer.png" alt="">
+        </div>
+        <div class="background-2">
             <div class="title">
-                <span>
-                    Best cars to make <br>
-                    Your </span><span>drive easy</span>
+                A Car Rental or Car Hire Agency
             </div>
-            <div class="item-row">
-                <button class="btn">Best Offers</button>
-                <img class="play-video" src="../../assets/images/home/play-video.png" alt="playvideo">
-                <div class="decs">How it works</div>
-            </div>
+            <button class="btn">Discover Popular New Cars</button>
+            <img class="text-blur" src="../../assets/images/home/car-rental-layer.png" alt="">
         </div>
         <img class="car-1" src="../../assets/images/home/car-slider.png" alt="car">
-        <img class="text-blur" src="../../assets/images/home/car-rental-layer.png" alt="">
         <svg class="svg-1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%"
             viewBox="0 0 1600 406">
             <path style="fill:#ffca08"
@@ -75,6 +84,10 @@
                 d="M-5.143,340.337C87.619,364.359,200.042,380.486,309,381c298.183,1.4,631.464-245.093,878-242,244.99,3.074,420.5,129,420.5,129V410H-4.75Z">
             </path>
         </svg>
+        <div class="option-btn">
+            <button class="btn-up"><div class="dot dotScale"></div></button>
+            <button class="btn-down"><div class="dot"></div></button>
+        </div>
     </section>
     <!-- section-1 -->
 
