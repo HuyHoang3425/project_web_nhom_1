@@ -1,0 +1,36 @@
+/* <576px	Small
+≥576px	Medium
+≥768px	Large
+≥992px	Extra large
+≥1200px */
+@media (max-width: 1240px) {
+    /* header */
+    header nav{
+        display:none;
+    }
+    header .btn-i i{
+        display: block;
+    }
+    /* header */
+}
+@media (max-width: 992px) {
+    /* header */
+    header{
+        margin: 30px;
+        width: calc(100% - 60px);
+    }
+    /* header */
+}
+@media (max-width: 768px) {
+    /* header */
+    header .btn {
+        display: none;
+    }
+    header img{
+        width: 120px;
+    }
+    /* header */
+}
+@media (min-width: 576px) {
+    
+}
