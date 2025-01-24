@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Level 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu-item {
+            position: relative;
+            margin: 0 10px;
+        }
+
+        .menu-link {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .menu-link:hover {
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            list-style: none;
+            margin: 0;
+            padding: 10px 0;
+            min-width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            display: none;
+            z-index: 1000;
+        }
+
+        .dropdown-item {
+            position: relative;
+        }
+
+        .dropdown-link {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-link:hover {
+            background-color: #f0f0f0;
+            border-radius: 3px;
+        }
+
+        .dropdown:hover > .dropdown-menu {
+            display: block; /* Show menu on hover */
+        }
+
+        /* Submenu styles (level 2) */
+        .dropdown-menu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-left: 5px;
+            border-radius: 5px;
+        }
+
+        .dropdown-item:hover > .dropdown-menu {
+            display: block; /* Show submenu */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="menu-item dropdown">
+                <a href="#" class="menu-link">Pages</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">FAQ</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-link">General FAQ</a></li>
+                            <li><a href="#" class="dropdown-link">Technical FAQ</a></li>
+                            <li><a href="#" class="dropdown-link">Billing FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="dropdown-link">Blog</a></li>
+                    <li><a href="#" class="dropdown-link">Dropdown menu</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
