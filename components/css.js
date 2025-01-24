@@ -1,4 +1,6 @@
 export const css = `
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
 header {
     display: flex;
     align-items: center;
@@ -10,6 +12,48 @@ header {
     width: calc(100% - 200px);
     border-radius: 60px;
     margin: 30px 100px;
+    transition: all 0.5s ease-in-out;
+}
+.header-up{
+    transform: translateY(-150px);
+}
+.header-down{
+    transform: translateY(0);
+    background-color: #1F1A06;
+}
+header ul {
+    display: flex;
+    gap: 30px;
+}
+header a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #D9D9D9;
+    position: relative; 
+    font-family:'Roboto';font-style:italic;
+}
+header a:hover{
+    color:#FFCA08;
+}
+header a:hover::after{
+    display: block;
+}
+a.showafter{
+    color:#FFCA08;
+}
+a.showafter::after{
+    display: block;
+}
+header a::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #FFCA08;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -34px;
+    left: calc((100% - 5px)/2);
+    display: none;
 }
 header ul {
     display: flex;
@@ -124,6 +168,10 @@ header .list-2 li:hover{
     gap:10px;
     color:#FFCA08;
     margin-bottom: 80px;
+    align-items: center;
+}
+.section-1 .icon a{
+    color:#FFCA08;
 }
 .section-1 .icon p{
     font-weight: 700;
