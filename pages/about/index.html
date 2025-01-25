@@ -6,57 +6,380 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Dat lam about</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dat make about</title>
     <style>
-        .space {
-            height: 1000px;
-        }
-
         ::selection {
-            background: #FFCA08; /* Màu nền khi bôi đen */
-            color: black; /* Màu chữ khi bôi đen */
+            background: #FFCA08;
+            color: rgb(255, 255, 255);
         }
 
-        .men-rolex{
-            position: relative;
+        /* car rental */
+        .rental {
             padding-top: 160px;
-            padding-bottom: 300px;
-            padding-left: 100px;                                                                                                                                                       ;
+            margin-bottom: 40px;
+            padding-left: 100px;
+            padding-right: 100px;
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
         }
-        .men-rolex img{
 
-            width: 350px;
-            height: 420px;
+        .men-rolex {
+            position: relative;
+        }
+
+        .men-rolex img {
+
+            width: 380px;
+            height: 460px;
             object-fit: cover;
             border: solid 10px #FFCA08;
             border-radius: 20px;
         }
-        .word-men-rolex{
+
+        .word-men-rolex {
             position: absolute;
             color: rgb(255, 255, 255);
-            top: 40%;
-            left: 20%;
+            top: 230px;
+            left: 180px;
             transform: translate(-50%, -50%);
             color: rgb(255, 255, 255);
-            
-            
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
         }
-        .word-men-rolex p{
-            font-size: xxx-large;
+
+        .word-men-rolex p {
+            font-size: 240%;
             font-weight: 300;
         }
-        .word-men-rolex span{
+
+        .word-men-rolex span {
             font-size: xx-large;
             font-weight: 700;
         }
-        .word-rental{
+
+        .word-rental {
+            color: #666666;
+            line-height: 150%;
+            font-size: x-large;
+        }
+
+        .content-and-icon {
+            padding-top: 8px;
+        }
+
+        /* poiner icon car */
+        .icon-and-content {
+            display: flex;
+            gap: 20px;
+        }
+
+        .icon-and-content i {
+            color: #FFCA08;
+            font-size: x-large;
+            border: solid 3px black;
+            padding: 8px;
+            border-radius: 100%;
+            background-color: black;
+        }
+
+        .icon-and-content p {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 120%;
+        }
+
+        .hover-car :hover {
+            border: solid 3px #FFCA08;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .row-icon-content {
+            display: flex;
+            gap: 60px;
+            padding-top: 50px;
+        }
+
+        .icon-colum {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* expert-stats */
+        .expert-stats {
+            background-color: #1C1601;
+            margin-top: -11px;
+            text-align: center;
+        }
+
+        .word-same-buttom {
+            display: inline-block;
+            background-color: #F1F1F1;
+            color: #52526A;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1.5em;
+        }
+
+        .under-the-same {
+            color: #F1F1F1;
+            font-size: xxx-large;
+            padding-top: 48px;
+            font-weight: 500;
+        }
+
+        .under-the-same span {
+            color: #FFCA08;
+            border-bottom: 4px solid #FFCA08;
+            padding-bottom: 3px;
+        }
+
+        .card {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            animation: example 2s;
+            transition: transform 0.3s ease;
+        }
+
+        .data {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            gap: 100px;
+            padding-top: 80px;
+        }
+
+        .card p {
+            font-size: 600%;
+            color: white;
+            font-weight: 200;
+        }
+
+        .card span {
+            font-size: 150%;
+            background-color: #F3BF07;
+            font-weight: 500;
+            border-radius: 30px;
+            padding: 10px 20px;
+        }
+
+        .card:hover p {
             color: black;
+            background-color: #F3BF07;
+            border-radius: 20px;
+        }
+
+        .card:hover span {
+            background-color: #F1F1F1;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        @keyframes example {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /*We-belive*/
+        .we-belive {
+            padding-left: 100px;
+            padding-right: 100px;
+            display: flex;
+            gap: 52px;
+            margin-bottom: 0px;
+        }
+
+        .content-in-we-belive {
+            width: 50%;
+        }
+
+        .content-in-we-belive p {
+            font-size: 350%;
+            margin-bottom: 48px;
+            font-weight: 450;
+        }
+
+        .content-in-we-belive span {
+            color: #FFCA08;
+            border-bottom: 4.5px solid #FFCA08;
+        }
+
+        /* Edit-button-content-buttom */
+        .tabs {
+            display: flex;
+            gap: 48px;
+            border-bottom: 2px solid #b0b0cf;
+        }
+
+        .icon-title {
+            display: flex;
+            gap: 12px;
+        }
+
+        .tabs button {
+            cursor: pointer;
+            border-style: none;
+            background-color: #FFFFFF;
+            font-size: 140%;
+            color: #464444;
+            font-weight: 450;
+            padding-bottom: 16px;
+
+        }
+
+        #content {
+            margin-top: 44px;
+            color: #666666;
+            font-size: 130%;
+            line-height: 32px;
+        }
+
+        .tabs button:hover {
+            color: #5784BA;
+        }
+
+        .tabs button.active {
+            color: #FFCA08;
+            border-bottom: 2px solid #FFCA08;
+        }
+
+        /* edit-picture-in-we-belive */
+        .picture-in-we-belive {
+            width: 50%;
+        }
+
+        #picture img {
+            width: 650px;
+            height: 500px;
+            object-fit: contain;
+        }
+
+        .button-picture {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .button-picture button {
+            color: #aaa6a6;
+            border-style: none;
+            background-color: #FFFFFF;
+            cursor: pointer;
+        }
+
+        .button-picture button:hover {
+            color: black;
+        }
+
+        .button-picture button.active {
+            color: black;
+        }
+
+        /* choose us */
+        .choose-us {
+            margin-top: -20px;
+            background-color: #1c1601;
+            display: flex;
+            gap: 80px;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 100px;
+        }
+
+        /* choose us picture */
+        .picture-choose-us {
+            
+        }
+
+        .picture-choose-us img {
+            position: relative;
+            width: 500px;
+            height: 600px;
+            border-radius: 20px;
+            padding-bottom: 60px;
+            object-fit: contain;
+        }
+
+        .content-in-picture-choose-us {
+            position: absolute;
+            display: flex;
+            gap: 0px;
+            justify-content: center;
+            align-items: center;
+            height: 105%;
+            left: 12%;
+        }
+
+        .word-in-picture-choose-us {
+            background-color: #1C1601;
+            color: white;
+            padding: 24px 80px;
+            border-radius: 50px;
+        }
+
+        .word-in-picture-choose-us p {
+            font-size: 150%;
+            font-weight: 500;
+        }
+
+        .content-in-picture-choose-us i {
+            color: black;
+            position: absolute;
+            background-color: #FFCA08;
+            font-size: 300%;
+            padding: 24px 30px;
+            border-radius: 100%;
+            left: -12%;
+            cursor: pointer;
+            border: 7px solid #9397a0;
+
+        }
+
+        .content-in-picture-choose-us i:hover {
+            font-size: 330%;
+        }
+
+        /* choose us content */
+        .title-content-chosse-us {
+            font-size: 300%;
+            font-weight: 600;
+        }
+
+        .title-content-chosse-us p {
+            color: white;
+        }
+
+        .title-content-chosse-us span {
+            color: #FFCA08;
+            border-bottom: 4px solid #FFCA08;
+        }
+        .word-content-choose-us{
+            padding-top: 52px;
+            color: #687474;
+            font-size: 130%;
+            width: 100%;
+            line-height: 40px;
         }
     </style>
 </head>
 
 <body id="about">
+    <!-- car rental -->
     <div class="rental">
         <div class="men-rolex">
             <img src="../../assets/picture about/men-rolex.jpg" alt="">
@@ -65,13 +388,244 @@
                 <span>Car Rental</span>
             </div>
         </div>
-        <div class="word-rental">
-            <h1>hasfdhsdaf</h1>
+        <div class="content-and-icon">
+            <div class="word-rental">
+                <p>A car rental, hire car, or car hire agency is a company that rents automobiles for short periods of
+                    time to the public, generally ranging from a few hours to a few weeks. It is often organized with
+                    numerous local branches (which allow a user to return a vehicle to a different location), and
+                    primarily located near airports or busy city areas and often complemented by a website allowing
+                    online reservations.</p>
+            </div>
+            <!-- poiner icon car -->
+            <div class="row-icon-content">
+                <div class="icon-colum">
+                    <div class="icon-and-content">
+                        <div class="hover-car">
+                            <i class="fa-solid fa-car-rear"></i>
+                        </div>
+                        <p>Limited liability for shareholders.</p>
+                    </div>
+                    <div class="icon-and-content">
+                        <div class="hover-car">
+                            <i class="fa-solid fa-car-rear"></i>
+                        </div>
+                        <p>Limited liability for shareholders.</p>
+                    </div>
+                    <div class="icon-and-content">
+                        <div class="hover-car">
+                            <i class="fa-solid fa-car-rear"></i>
+                        </div>
+                        <p>Limited liability for shareholders.</p>
+                    </div>
+                </div>
+                <div class="icon-colum">
+                    <div class="icon-and-content">
+                        <div class="hover-car">
+                            <i class="fa-solid fa-car-rear"></i>
+                        </div>
+                        <p>Limited liability for shareholders.</p>
+                    </div>
+                    <div class="icon-and-content">
+                        <div class="hover-car">
+                            <i class="fa-solid fa-car-rear"></i>
+                        </div>
+                        <p>Limited liability for shareholders.</p>
+                    </div>
+                    <div class="icon-and-content">
+                        <div class="hover-car">
+                            <i class="fa-solid fa-car-rear"></i>
+                        </div>
+                        <p>Limited liability for shareholders.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
- <script type="module" src="../../components/HF.js"></script>
 
+    <div class="black-one">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1607.5 417">
+            <path style="fill:transparent"
+                d="M1608.03,417H-1.709L-3.493,267.327c76.974,52.083,173.369,106.4,262.948,114.816,82.7,7.772,175.138-15.857,175.138-15.857,296.27-61.5,450.55-323.851,772.167-357.194,146.02-12.5,299.07,11.613,401.05,33.813Z">
+            </path>
+            <path style="fill:#ffca08"
+                d="M-2.25,405.5H1607.5l1-248.5S1498.97,67.09,1199,82.5C952.453,84.455,717.723,320.6,424,369c0,0-91,17-172,11-87.435-6.475-177.172-39.147-255.516-77.726Z">
+            </path>
+            <path style="fill:#1c1601"
+                d="M-5.143,340.337C87.619,364.359,200.042,380.486,309,381c298.183,1.4,631.464-245.093,878-242,244.99,3.074,420.5,129,420.5,129V410H-4.75Z">
+            </path>
+        </svg>
+        <div class="expert-stats">
+            <div class="word-same-buttom">
+                <p>Car rental expert stats</p>
+            </div>
+            <div class="under-the-same">
+                <p>We are a expert team </p>
+                <p>Our stats also are <span>expert</span></p>
+            </div>
+            <div class="data">
+                <div class="card">
+                    <p>99K</p>
+                    <span>Happy Clients</span>
+                </div>
+                <div class="card">
+                    <p>28+</p>
+                    <span>Years of Exprience</span>
+                </div>
+                <div class="card">
+                    <p>96+</p>
+                    <span>Expert Menbers</span>
+                </div>
+                <div class="card">
+                    <p>78+</p>
+                    <span>Awards Winner</span>
+                </div>
+            </div>
+        </div>
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 406"
+            transform="scale(-1,-1)">
+            <path style="fill:transparent"
+                d="M1608.03,417H-1.709L-3.493,267.327c76.974,52.083,173.369,106.4,262.948,114.816,82.7,7.772,175.138-15.857,175.138-15.857,296.27-61.5,450.55-323.851,772.167-357.194,146.02-12.5,299.07,11.613,401.05,33.813Z">
+            </path>
+            <path style="fill:#ffca08"
+                d="M-2.25,405.5H1607.5l1-248.5S1498.97,67.09,1199,82.5C952.453,84.455,717.723,320.6,424,369c0,0-91,17-172,11-87.435-6.475-177.172-39.147-255.516-77.726Z">
+            </path>
+            <path style="fill:#1c1601"
+                d="M-5.143,340.337C87.619,364.359,200.042,380.486,309,381c298.183,1.4,631.464-245.093,878-242,244.99,3.074,420.5,129,420.5,129V410H-4.75Z">
+            </path>
+        </svg>
+    </div>
+    <!-- We belive -->
+    <div class="we-belive">
+        <div class="content-in-we-belive">
+            <p>We believe we are professional <span>Car Rental</span></p>
+            <div class="tabs">
+                <button onclick="changeTab(this, 'car-rental')" class="active">Car Rental</button>
+                <button onclick="changeTab(this, 'drivers')">Drivers</button>
+                <button onclick="changeTab(this, 'buy-sell')">Buy/Sell</button>
+                <button onclick="changeTab(this, 'agreements')">Agreements</button>
+            </div>
+
+            <div id="content">
+                <div id="car-rental" class="tab-content active">We invest in local solutions to the local water crisis
+                    in
+                    sub-Saharan Africa. We provide clean water. In order to help the communities we have created a group
+                    of farmers who donate agricultural product to food banks.</div>
+                <div id="drivers" class="tab-content" style="display: none;">If you haven't any charity in your heart,
+                    You have the worst kind of heart trouble. Good actions give strength to ourselves and inspire good
+                    actions in others.</div>
+                <div id="buy-sell" class="tab-content" style="display: none;">The way you get meaning into your life is
+                    to devote yourself to loving others, devote yourself to your community around you, and devote
+                    yourself to creating something that gives you purpose and meaning. Happiness is not something ready
+                    made. It comes from your own actions!</div>
+                <div id="agreements" class="tab-content" style="display: none;">The terms agreement and contract are
+                    often used interchangeably. However, while a contract is always an agreement, an agreement is not
+                    always a contract. To know the difference between them, it is crucial to define agreement and truly
+                    understand that agreement definition.</div>
+            </div>
+        </div>
+        <div class="picture-in-we-belive">
+            <div id="picture">
+                <div id="pico" class="tab-picture active">
+                    <img src="../../assets/picture about/pico.png" alt="pico">
+                </div>
+                <div id="pict" class="tab-picture" style="display: none;">
+                    <img src="../../assets/picture about/pict.png" alt="pict">
+                </div>
+                <div id="picth" class="tab-picture" style="display: none;">
+                    <img src="../../assets/picture about/picth.png" alt="picth">
+                </div>
+                <div id="picf" class="tab-picture" style="display: none;">
+                    <img src="../../assets/picture about/picf.png" alt="picf">
+                </div>
+            </div>
+            <div class="button-picture">
+                <button onclick="changePicture(this, 'pico')" class="active"><i
+                        class="fa-regular fa-circle"></i></button>
+                <button onclick="changePicture(this, 'pict')"><i class="fa-regular fa-circle"></i></button>
+                <button onclick="changePicture(this, 'picth')"><i class="fa-regular fa-circle"></i></button>
+                <button onclick="changePicture(this, 'picf')"><i class="fa-regular fa-circle"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- choose us -->
+    <div class="Chosse-Us">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1607.5 417">
+            <path style="fill:transparent"
+                d="M1608.03,417H-1.709L-3.493,267.327c76.974,52.083,173.369,106.4,262.948,114.816,82.7,7.772,175.138-15.857,175.138-15.857,296.27-61.5,450.55-323.851,772.167-357.194,146.02-12.5,299.07,11.613,401.05,33.813Z">
+            </path>
+            <path style="fill:#ffca08"
+                d="M-2.25,405.5H1607.5l1-248.5S1498.97,67.09,1199,82.5C952.453,84.455,717.723,320.6,424,369c0,0-91,17-172,11-87.435-6.475-177.172-39.147-255.516-77.726Z">
+            </path>
+            <path style="fill:#1c1601"
+                d="M-5.143,340.337C87.619,364.359,200.042,380.486,309,381c298.183,1.4,631.464-245.093,878-242,244.99,3.074,420.5,129,420.5,129V410H-4.75Z">
+            </path>
+        </svg>
+        <div class="choose-us">
+            <div class="picture-choose-us">
+                <img src="../../assets/picture about/girl-choose-us.jpg" alt="">
+            </div>
+            <div class="content-in-picture-choose-us">
+                <i class="fa-solid fa-play"></i>
+                <div class="word-in-picture-choose-us">
+                    <p>About our company</p>
+                    <span>Watch the video</span>
+                </div>
+            </div>
+            <div class="content-chosse-us">
+                <div class="title-content-chosse-us">
+                    <p>Why you <span>Choose Us?</span></p>
+                </div>
+                <div class="word-content-choose-us">
+                    <p>
+                        Business services is a general term that describes work that supports a business but does not
+                        produce a tangible. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 406"
+            transform="scale(-1,-1)">
+            <path style="fill:transparent"
+                d="M1608.03,417H-1.709L-3.493,267.327c76.974,52.083,173.369,106.4,262.948,114.816,82.7,7.772,175.138-15.857,175.138-15.857,296.27-61.5,450.55-323.851,772.167-357.194,146.02-12.5,299.07,11.613,401.05,33.813Z">
+            </path>
+            <path style="fill:#ffca08"
+                d="M-2.25,405.5H1607.5l1-248.5S1498.97,67.09,1199,82.5C952.453,84.455,717.723,320.6,424,369c0,0-91,17-172,11-87.435-6.475-177.172-39.147-255.516-77.726Z">
+            </path>
+            <path style="fill:#1c1601"
+                d="M-5.143,340.337C87.619,364.359,200.042,380.486,309,381c298.183,1.4,631.464-245.093,878-242,244.99,3.074,420.5,129,420.5,129V410H-4.75Z">
+            </path>
+        </svg>
+    </div>
+
+    <script>
+        // script-content-belive
+        function changeTab(button, tabId) {
+            const buttons = document.querySelectorAll('.tabs button');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            button.classList.add('active');
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.style.display = 'none');
+
+            const activeContent = document.getElementById(tabId);
+            activeContent.style.display = 'block';
+        }
+        //script-picture-belive
+        function changePicture(button, picID) {
+            const buttonspic = document.querySelectorAll('.button-picture button');
+            buttonspic.forEach(btn => btn.classList.remove('active'));
+
+            button.classList.add('active');
+            const contentspic = document.querySelectorAll('.tab-picture');
+            contentspic.forEach(content => content.style.display = 'none');
+
+            const activeContent = document.getElementById(picID);
+            activeContent.style.display = 'block';
+        }
+    </script>
+    <script type="module" src="../../components/HF.js"></script>
 </body>
 
 </html>
