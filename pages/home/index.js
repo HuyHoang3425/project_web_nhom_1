@@ -97,6 +97,7 @@ const item = document.querySelectorAll(".slider .list .item");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const dots = document.querySelectorAll(".dots li");
+const img = document.querySelector(".slider img");
 console.log(dots);
 let active = 0;
 let lenghtItem = item.length - 1;
@@ -112,7 +113,8 @@ next.addEventListener("click", function () {
 let refreshSilder = setInterval(() => { next.click() }, 3000);
 function reloadSilde() {
   let checkLeft = item[active].offsetLeft;
-  list.style.left = `calc(-${checkLeft}px + (100% - 1192px) / 2)`;
+  let imgWidth = img.clientWidth;
+  list.style.left = `calc(-${checkLeft}px + (100% - ${imgWidth}px) / 2)`;
 
 
 

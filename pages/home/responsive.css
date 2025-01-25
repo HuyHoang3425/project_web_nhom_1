@@ -59,7 +59,7 @@
     /* section-6 */
     .section-6 .slider {
         width: 100vw;
-        height: 590px;
+        height: 440px;
     }
     .section-6 .slider .list {
         left: calc((100% - 800)/2);
@@ -69,45 +69,8 @@
     .section-6 .slider .item img {
         width: 800px;
     }
-    .section-6 .prev {
-        position: absolute;
-        bottom: 0;
-        left: calc(100%/4);
-    }
-    .section-6 .next {
-        position: absolute;
-        bottom: -0;
-        right: calc(100%/4);
-    }
-    .section-6 .slider button {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border: none;
-        background-color: #fff5;
-        transition: all 0.3s ease-in-out;
-    }
-    .section-6 .slider i {
-        font-size: 28px;
-        color: #8e8e8e;
-        transition: all 0.3s ease-in-out;
-    }
-    .section-6 .dots {
-        position: absolute;
-        bottom: 0;
-        left: calc(50% - 45px);
-        display: flex;
-        gap: 20px;
-    }
-    .section-6 .dots li {
-        width: 10px;
-        height: 10px;
-        background-color: #FFCA08;
-        border-radius: 20px;
-        transition: all 1s ease-in-out;
-    }
-    .section-6 li.active {
-        width: 30px;
+    .section-6 .item .decs{
+        font-size: 12px;
     }
     /* section-6 */
 
@@ -262,6 +225,12 @@
     }
     /* section-5 */
 
+    /* section-6 */
+    .section-6 .slider button {
+       display: none;
+    }
+    /* section-6 */
+
     /* section-10 */
     .section-10 .card-2 {
         width: 50%;
@@ -372,6 +341,26 @@
         transform: translate(-50%, -50%);
     }
     /* section-5 */
+
+    /* section-6 */
+    .section-6 .slider {
+        width: 100vw;
+        height:300px;
+        margin-bottom: 50px;
+    }
+    .section-6 .item .title{
+        margin-bottom:30px ;
+        font-size: 24px;
+    }
+    .section-6 .slider .list {
+        left: calc((100% - 500)/2);
+        display: flex;
+        gap: 120px;
+    }
+    .section-6 .slider .item img {
+        width: 500px;
+    }
+    /* section-6 */
 
     /* section-8 */
     .section-8 {
@@ -569,6 +558,26 @@
         top: 50px;
     }
     /* section-5 */
+
+     /* section-6 */
+     .section-6 .slider {
+        width: 100vw;
+        height:240px;
+        margin-bottom: 50px;
+    }
+    .section-6 .item .title{
+        margin-bottom:30px ;
+        font-size: 24px;
+    }
+    .section-6 .slider .list {
+        left: calc((100% - 300)/2);
+        display: flex;
+        gap: 120px;
+    }
+    .section-6 .slider .item img {
+        width: 300px;
+    }
+    /* section-6 */
 
     /* section-8 */
     .section-8 {
