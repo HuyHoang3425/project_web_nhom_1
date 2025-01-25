@@ -442,9 +442,27 @@ footer p{
     header{
         margin:0;
         width: 100%;
-     
     }
     /* header */
+
+    /* footer */
+    .svg-5 {
+        height: 100px;
+        position: absolute;
+        top: -100px;
+    }
+    footer .social {
+        display: flex;
+        gap: 30px;
+        position: absolute;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 150px;
+    }
+    /* footer */
 }
 @media (max-width: 992px) {
     /* header */
@@ -460,6 +478,30 @@ footer p{
         width: 120px;
     }
     /* header */
+
+    /* footer */
+    footer {
+        padding: 30px;
+    }
+    footer .car-footer {
+        top: -150px;
+        width: 80%;
+    }
+    footer .card .title {
+        font-size: 26px;
+        margin: 0;
+    }
+    footer img {
+        width: 200px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    /* footer */
+     .section-1{
+        height: 200px;
+        justify-content: flex-end;
+    }
 }
 @media (max-width: 576px) {
     
@@ -475,9 +517,57 @@ footer p{
         height: 10px;
         font-size: 14px;
     }
-}
     .show-screen{
     display: block;
+    }
 
+     /* footer */
+    footer .car-footer {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    footer .card {
+        padding: 10px;
+        margin: 20px 0;
+        flex-direction: column;
+    }
+    footer .social {
+        top: 100px;
+        gap: 10px;
+    }
+    footer .social li {
+        width: 40px;
+        height: 40px;
+    }
+    footer .card .title {
+        font-size: 18px;
+        margin: 0;
+    }
+    footer img {
+        width: 70px;
+    }
+    footer p {
+        font-size: 9px;
+    }
+    /* footer */
+    .gap{
+    height:50px;
+    }
+
+    .section-1{
+        height: 200px;
+        justify-content: flex-end;
+    }
+    .section-1 .title{
+        font-size: 32px;
+    }
+    .section-1 .icon{
+        display: flex;
+        gap:10px;
+        color:#FFCA08;
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
 }
 `
