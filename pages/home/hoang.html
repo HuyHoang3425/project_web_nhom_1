@@ -3,35 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotate Text Around Center</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-family: Arial, sans-serif;
-            transform-origin: 30px 30px; /* Điểm gốc xoay tại trung tâm chữ */
-            animation: rotateText 2s ease-out forwards;
-        }
-
-        @keyframes rotateText {
-            0% {
-                transform: rotateX(-90deg); /* Bắt đầu xoay từ trên xuống */
-            }
-            100% {
-                transform: rotateX(0); /* Chữ sẽ trở về vị trí ban đầu */
-            }
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <style>
+        h1{
+            font-size: 48px;
+            background-color: brown;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.5s ease-in-out; 
+        }
+        h1:hover{
+            transform: rotate(1800deg);
+        }
+    </style>
+    <h1>x</h1>
 </body>
 </html>

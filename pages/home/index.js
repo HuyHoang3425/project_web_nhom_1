@@ -13,20 +13,25 @@ links.forEach(link => {
 //nav
 
 //bar 
+const closeBar = document.querySelector(".close-bar");
 const bar = document.querySelector(".bar");
 const btnBar = document.querySelector("header .btn-i i");
 btnBar.onclick = function()
 {
   bar.classList.add("show-screen");
+  bar.classList.remove("bar-animation-out");
   bar.classList.add("bar-animation");
-  header.style.margin = 0  ;
-  header.style.width = 100 + `%`  ;
+  closeBar.classList.add("show-screen");
 }
- 
+closeBar.onclick = ()=>{
+  bar.classList.add("bar-animation-out");
+  closeBar.classList.remove("show-screen");
+  bar.classList.remove("bar-animation");
+  setTimeout(() =>{bar.classList.remove("show-screen")},1000);
+};
+
 //scroll
 let zero = 0;
-
-
 window.addEventListener("scroll", function () {
   let currentScrollTop = window.scrollY;
   const halfScreenHeight = window.innerHeight / 3;

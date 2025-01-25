@@ -1,5 +1,5 @@
 export const Header =`
-    <header>
+     <header>
         <img src="../../assets/images/home/car-rental-logo.png" alt="logo">
         <nav>
             <ul>
@@ -27,7 +27,40 @@ export const Header =`
                 <li><a href="http://127.0.0.1:5500/pages/contact/index.html">Contact</a></li>
             </ul>
         </nav>
-        <button class="btn">Request a Car</button>
+        <div class="btn-i">
+            <i class="fa-solid fa-bars-staggered">
+            </i>
+            <button class="btn">Request a Car</button>
+        </div>
+        <ul class="bar" id="bar">
+            <div>
+                <li class="li"><a class="showafter" href="http://127.0.0.1:5500/pages/home/index.html">Home</a></li>
+                <hr>
+                <li class="li"><a href="http://127.0.0.1:5500/pages/rent/index.html">Rent</a></li>
+                <hr>
+                <li class="li"><a href="http://127.0.0.1:5500/pages/locations/index.html">Locations</a></li>
+                <hr>
+                <li class="li"><a href="http://127.0.0.1:5500/pages/goldrewards/index.html">Gold Rewards</a></li>
+                <hr>
+                <li class="li"><a href="http://127.0.0.1:5500/pages/about/index.html">About</a></li>
+                <hr>
+                <li class="li"><a href="http://127.0.0.1:5500/pages/contact/index.html">Contact</a></li>
+                <hr>
+            </div>
+            <div>
+                <div class="social">
+                    <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></i></li>
+                    </ul>
+                    <p>© Copyright 2025</p>
+                </div>
+            </div>
+        </ul>
+        <button class="close-bar">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
     </header>
         <section class="section-1">
             <div class="title">Rent</div>

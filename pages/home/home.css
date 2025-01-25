@@ -160,20 +160,35 @@ header .btn-i i{
     right: 0;
     display: none;
     position: absolute;
+    overflow: hidden;
 }
 .bar .li a{
     color:#1c1601a0;
+    transition: all 0.5s ease-in-out;
 }
 .bar .li{
     padding: 15px 20px;
-    transition: all 0.5s ease-in-out;
+    transition: transform 0.5s ease-out;
 }
+
 .bar hr{
     color:#6767674c;
 }
+.bar .li::after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1c160146;
+    position: absolute;
+    top:0;
+    left:-50px;
+  }
 .bar .li:hover{
     transform: translateX(20px);
-    color:#030302;
+}
+.bar .li:hover a{
+    color:#1C1601
 }
 .bar .social{
     position: absolute;
@@ -187,7 +202,7 @@ header .btn-i i{
     color:#525252;
     border:1px solid #525252;
     padding:20px;
-    border-radius: 20px;
+    border-radius: 30px;
     margin: 0 30px;
 }
 .bar .social ul{
@@ -228,14 +243,17 @@ header .btn-i i{
 .bar .social ul li:nth-child(1)::after
 {
     background-color: #185fbb;
+    transition: transform 0.3s ease-out;
 }
 .bar .social ul li:nth-child(2)::after
 {
-    background-color:  #359cdc;;
+    background-color:  #359cdc;
+    transition: transform 0.3s ease-out;
 }
 .bar .social ul li:nth-child(3)::after
 {
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    transition: transform 0.3s ease-out;
 }
 .bar .social ul li:hover::after{
     transform: translateX(0);
@@ -246,24 +264,49 @@ header .btn-i i{
 .bar-animation{
     animation: animate-bar 0.5s ease-out forwards;
 }
+.bar-animation-out{
+    animation: animate-bar-out 0.5s ease-out forwards;
+}
 .close-bar{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    font-size: 26px;
+    font-size: 24px;
     border: none;
     background-color: rgba(255, 255, 255, 0.232);
     position: absolute;
     right: 50%;
     top: 0;
-    /* display: none; */
+    display: none;
+    padding:0;
+}
+.close-bar i{
+    transition: transform 0.5s ease-out;
 }
 .close-bar:hover i{
- transform: rotate(80deg);
+ transform: rotate(-180deg);
+}
+@keyframes animate-bar-out {
+    0%{
+       transform: translateX(0); 
+    }
+    100%{
+
+        transform: translateX(100%); 
+     }
 }
 @keyframes animate-bar {
     0%{
        transform: translateX(100%); 
+    }
+    100%{
+
+        transform: translateX(0); 
+     }
+}
+@keyframes animate-bar-text {
+    0%{
+       transform: translateX(90px); 
     }
     100%{
 
