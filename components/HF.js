@@ -1,4 +1,4 @@
-import { Header } from './Header.js';
+import { Header } from './header.js';
 import { Footer } from './Footer.js';
 import { css } from './css.js';
 
@@ -30,20 +30,40 @@ if (pageId === 'rent') {
     content.innerHTML = "About";
 }
 
+const header = document.querySelector("header"); //header
+//nav
 //link
 const links = document.querySelectorAll("header a");
 const currentUrl = window.location.href;
 links.forEach(link => {
-    if (link.href === currentUrl) {
-        link.classList.add("showafter");
-    } else {
-        link.classList.remove("showafter");
-    }
+  if (link.href === currentUrl) {
+    link.classList.add("showafter");
+  } else {
+    link.classList.remove("showafter");
+  }
 });
+//nav
+
+//bar 
+const closeBar = document.querySelector(".close-bar");
+const bar = document.querySelector(".bar");
+const btnBar = document.querySelector("header .btn-i i");
+btnBar.onclick = function()
+{
+  bar.classList.remove("bar-animation-out");
+  bar.classList.add("show-screen");
+  bar.classList.add("bar-animation");
+  closeBar.classList.add("show-screen");
+}
+closeBar.onclick = ()=>{
+  bar.classList.add("bar-animation-out");
+  closeBar.classList.remove("show-screen");
+  bar.classList.remove("bar-animation");
+  setTimeout(() =>{bar.classList.remove("show-screen")},1000);
+};
+
 //scroll
 let zero = 0;
-const header = document.querySelector("header");
-
 window.addEventListener("scroll", function () {
   let currentScrollTop = window.scrollY;
   const halfScreenHeight = window.innerHeight / 3;
@@ -62,3 +82,5 @@ window.addEventListener("scroll", function () {
 
   zero = currentScrollTop;
 });
+
+//scroll

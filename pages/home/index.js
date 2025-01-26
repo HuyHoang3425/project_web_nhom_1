@@ -1,3 +1,4 @@
+const header = document.querySelector("header"); //header
 //nav
 //link
 const links = document.querySelectorAll("header a");
@@ -10,10 +11,27 @@ links.forEach(link => {
   }
 });
 //nav
+
+//bar 
+const closeBar = document.querySelector(".close-bar");
+const bar = document.querySelector(".bar");
+const btnBar = document.querySelector("header .btn-i i");
+btnBar.onclick = function()
+{
+  bar.classList.add("show-screen");
+  bar.classList.remove("bar-animation-out");
+  bar.classList.add("bar-animation");
+  closeBar.classList.add("show-screen");
+}
+closeBar.onclick = ()=>{
+  bar.classList.add("bar-animation-out");
+  closeBar.classList.remove("show-screen");
+  bar.classList.remove("bar-animation");
+  setTimeout(() =>{bar.classList.remove("show-screen")},1000);
+};
+
 //scroll
 let zero = 0;
-const header = document.querySelector("header");
-
 window.addEventListener("scroll", function () {
   let currentScrollTop = window.scrollY;
   const halfScreenHeight = window.innerHeight / 3;
@@ -36,31 +54,37 @@ window.addEventListener("scroll", function () {
 //scroll
 
 // button-option
-const bgd1 = document.querySelector(".section-1 .background-1");
-const bgd2 = document.querySelector(".section-1 .background-2");
-const btnUp = document.querySelector(".section-1 .btn-up");
-const btnDown = document.querySelector(".section-1 .btn-down");
-btnDown.addEventListener("click",function()
-{
-  bgd1.classList.remove("show");
-  bgd2.classList.add("show");
-})
-btnUp.addEventListener("click",function()
-{
-  bgd2.classList.remove("show");
-  bgd1.classList.add("show");
-})
-const dot_section_1 = document.querySelectorAll(".section-1 .option-btn button .dot")
-dot_section_1.forEach(item =>{
-  item.addEventListener("click", function() {
-    if (item.classList.contains("dotScale")) {
-      item.classList.add("dotScale");  // Thêm nếu chưa có
-    } else {
-      item.classList.remove("dotScale");  // Xóa nếu đã có
-    }
-  });
-})
+const backgrounds = document.querySelectorAll(".section-1 .background");
+const dotsi = document.querySelectorAll(".option-btn .dot");
+const buttons = document.querySelectorAll(".option-btn button");
+let currentIndex = 0;
+let refreshBackground;
 
+
+function changeBackground(index) {
+  backgrounds.forEach((bg) => bg.classList.remove("show"));
+  dotsi.forEach((dot) => dot.classList.remove("dotScale"));
+
+  backgrounds[index].classList.add("show");
+  dotsi[index].classList.add("dotScale");
+}
+
+function refresh() {
+  clearInterval(refreshBackground); 
+  refreshBackground = setInterval(() => {
+    currentIndex = (currentIndex + 1) % backgrounds.length; 
+    changeBackground(currentIndex);
+  }, 5000); 
+}
+
+buttons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    currentIndex = index; 
+    changeBackground(index); 
+    refresh(); 
+  });
+});
+refresh();
 
 
 
@@ -73,6 +97,7 @@ const item = document.querySelectorAll(".slider .list .item");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const dots = document.querySelectorAll(".dots li");
+const img = document.querySelector(".slider img");
 console.log(dots);
 let active = 0;
 let lenghtItem = item.length - 1;
@@ -88,7 +113,8 @@ next.addEventListener("click", function () {
 let refreshSilder = setInterval(() => { next.click() }, 3000);
 function reloadSilde() {
   let checkLeft = item[active].offsetLeft;
-  list.style.left = `calc(-${checkLeft}px + (100% - 1192px) / 2)`;
+  let imgWidth = img.clientWidth;
+  list.style.left = `calc(-${checkLeft}px + (100% - ${imgWidth}px) / 2)`;
 
 
 
