@@ -55,39 +55,51 @@ window.addEventListener("scroll", function () {
 });
 
 //scroll
+const playvideo = document.querySelector(".play-video");
+const video = document.querySelector("#videoContainer .video");
+playvideo.addEventListener("click",function()
+{
+  const url = "https://www.youtube.com/embed/fY85ck-pI5c";
+  video.src = url;
+  document.getElementById("videoContainer").style.display = "block";
+});
+function hideVideo() {
+  video.src ="";
+  document.getElementById("videoContainer").style.display = "none";
+}
 
 // button-option
-const backgrounds = document.querySelectorAll(".section-1 .background");
-const dotsi = document.querySelectorAll(".option-btn .dot");
-const buttons = document.querySelectorAll(".option-btn button");
-let currentIndex = 0;
-let refreshBackground;
+// const backgrounds = document.querySelectorAll(".section-1 .background");
+// const dotsi = document.querySelectorAll(".option-btn .dot");
+// const buttons = document.querySelectorAll(".option-btn button");
+// let currentIndex = 0;
+// let refreshBackground;
 
 
-function changeBackground(index) {
-  backgrounds.forEach((bg) => bg.classList.remove("show"));
-  dotsi.forEach((dot) => dot.classList.remove("dotScale"));
+// function changeBackground(index) {
+//   backgrounds.forEach((bg) => bg.classList.remove("show"));
+//   dotsi.forEach((dot) => dot.classList.remove("dotScale"));
 
-  backgrounds[index].classList.add("show");
-  dotsi[index].classList.add("dotScale");
-}
+//   backgrounds[index].classList.add("show");
+//   dotsi[index].classList.add("dotScale");
+// }
 
-function refresh() {
-  clearInterval(refreshBackground); 
-  refreshBackground = setInterval(() => {
-    currentIndex = (currentIndex + 1) % backgrounds.length; 
-    changeBackground(currentIndex);
-  }, 5000); 
-}
+// function refresh() {
+//   clearInterval(refreshBackground); 
+//   refreshBackground = setInterval(() => {
+//     currentIndex = (currentIndex + 1) % backgrounds.length; 
+//     changeBackground(currentIndex);
+//   }, 5000); 
+// }
 
-buttons.forEach((button, index) => {
-  button.addEventListener("click", () => {
-    currentIndex = index; 
-    changeBackground(index); 
-    refresh(); 
-  });
-});
-refresh();
+// buttons.forEach((button, index) => {
+//   button.addEventListener("click", () => {
+//     currentIndex = index; 
+//     changeBackground(index); 
+//     refresh(); 
+//   });
+// });
+// refresh();
 
 
 
@@ -200,9 +212,9 @@ function checkScroll() {
     }
 
     // Nếu phần tử ra khỏi viewport, reset lại để có thể chạy lại
-    if (!elementInView && hasRun[index]) {
-      hasRun[index] = false; // Đặt lại trạng thái để có thể chạy lại khi cuộn lại
-    }
+    // if (!elementInView && hasRun[index]) {
+    //   hasRun[index] = false; // Đặt lại trạng thái để có thể chạy lại khi cuộn lại
+    // }
   });
 }
 
@@ -261,38 +273,3 @@ dots_10.forEach((dot, index) => {
       itemInterval = setInterval(nextSlide, 4000);
   });
 });
-
-
-
-// button-option
-// const backgrounds = document.querySelectorAll(".section-1 .background");
-// const dotsi = document.querySelectorAll(".option-btn .dot");
-// const buttons = document.querySelectorAll(".option-btn button");
-// let currentIndex = 0;
-// let refreshBackground;
-
-
-// function changeBackground(index) {
-//   backgrounds.forEach((bg) => bg.classList.remove("show"));
-//   dotsi.forEach((dot) => dot.classList.remove("dotScale"));
-
-//   backgrounds[index].classList.add("show");
-//   dotsi[index].classList.add("dotScale");
-// }
-
-// function refresh() {
-//   clearInterval(refreshBackground); 
-//   refreshBackground = setInterval(() => {
-//     currentIndex = (currentIndex + 1) % backgrounds.length; 
-//     changeBackground(currentIndex);
-//   }, 5000); 
-// }
-
-// buttons.forEach((button, index) => {
-//   button.addEventListener("click", () => {
-//     currentIndex = index; 
-//     changeBackground(index); 
-//     refresh(); 
-//   });
-// });
-// refresh();

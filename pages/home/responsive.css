@@ -309,6 +309,10 @@
 
     /* section-10 */
 
+    #videoContainer{
+        width: 90%;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -824,4 +828,11 @@
     }
 
     /* chat */
+
+    /* video */
+    #videoContainer{
+        height: 200px;
+        width: 90%;
+    }
+    /* video */
 }
