@@ -69,37 +69,37 @@ function hideVideo() {
 }
 
 // button-option
-// const backgrounds = document.querySelectorAll(".section-1 .background");
-// const dotsi = document.querySelectorAll(".option-btn .dot");
-// const buttons = document.querySelectorAll(".option-btn button");
-// let currentIndex = 0;
-// let refreshBackground;
+const backgrounds = document.querySelectorAll(".section-1 .background");
+const dotsi = document.querySelectorAll(".option-btn .dot");
+const buttons = document.querySelectorAll(".option-btn button");
+let currentIndex = 0;
+let refreshBackground;
 
 
-// function changeBackground(index) {
-//   backgrounds.forEach((bg) => bg.classList.remove("show"));
-//   dotsi.forEach((dot) => dot.classList.remove("dotScale"));
+function changeBackground(index) {
+  backgrounds.forEach((bg) => bg.classList.remove("show"));
+  dotsi.forEach((dot) => dot.classList.remove("dotScale"));
 
-//   backgrounds[index].classList.add("show");
-//   dotsi[index].classList.add("dotScale");
-// }
+  backgrounds[index].classList.add("show");
+  dotsi[index].classList.add("dotScale");
+}
 
-// function refresh() {
-//   clearInterval(refreshBackground); 
-//   refreshBackground = setInterval(() => {
-//     currentIndex = (currentIndex + 1) % backgrounds.length; 
-//     changeBackground(currentIndex);
-//   }, 5000); 
-// }
+function refresh() {
+  clearInterval(refreshBackground); 
+  refreshBackground = setInterval(() => {
+    currentIndex = (currentIndex + 1) % backgrounds.length; 
+    changeBackground(currentIndex);
+  }, 5000); 
+}
 
-// buttons.forEach((button, index) => {
-//   button.addEventListener("click", () => {
-//     currentIndex = index; 
-//     changeBackground(index); 
-//     refresh(); 
-//   });
-// });
-// refresh();
+buttons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    currentIndex = index; 
+    changeBackground(index); 
+    refresh(); 
+  });
+});
+refresh();
 
 
 
