@@ -71,9 +71,12 @@ window.addEventListener("scroll", function () {
     if (currentScrollTop > zero) {
       header.classList.remove("header-down");
       header.classList.add("header-up");
+      bar.classList.remove("show-screen");
+      closeBar.classList.remove("show-screen");
     } else if (currentScrollTop < zero) {
       header.classList.remove("header-up");
       header.classList.add("header-down");
+      
     }
   } else {
     header.classList.remove("header-down");
@@ -84,3 +87,21 @@ window.addEventListener("scroll", function () {
 });
 
 //scroll
+
+//chat
+const chat = document.querySelector(".chat");
+const cmt = document.querySelector(".chat .cmt");
+const cls = document.querySelector(".chat .cls");
+const message = document.querySelector(".message");
+chat.addEventListener("click",function()
+{
+  if (cmt.style.display === 'block') {
+    cmt.style.display = 'none';  
+    cls.style.display = 'block';
+    message.classList.add("show-screen");
+  } else {
+    cmt.style.display = 'block'; 
+    cls.style.display = 'none';  
+    message.classList.remove("show-screen");
+  }
+})

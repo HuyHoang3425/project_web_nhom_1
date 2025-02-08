@@ -1,4 +1,33 @@
 export const Header =`
+     <div class="chat">
+        <i class="fa-solid fa-comment-dots cmt show-screen"></i>
+        <i class="fa-solid fa-xmark cls"></i>
+    </div>
+    <div class="message">
+        <div class="card">
+            <div class="card-1">
+                <div class="title">
+                    We are live and ready to chat with <br>
+                    you now. Say something to start a  <br>
+                    live chat. <br>
+                </div>
+            </div>
+            <div class="card-2">
+                <div class="content">
+                    <img src="../../assets/images/home/icon-chat.svg" alt="">
+                    <span>Add free live chat to your site</span>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Write a reply...">
+                    <div class="icon">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
      <header>
         <img src="../../assets/images/home/car-rental-logo.png" alt="logo">
         <nav>
