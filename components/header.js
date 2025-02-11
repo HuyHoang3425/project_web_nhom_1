@@ -94,7 +94,7 @@ export const Header =`
         <section class="section-1">
             <div class="title">Rent</div>
             <div class="icon">
-                <a href="http://127.0.0.1:5500/pages/home/index.html"><i class="fa-solid fa-house"></i></a>
+                <a href="../home/index.html"><i class="fa-solid fa-house"></i></a>
                 <i class="fa-solid fa-angles-right"></i>
                 <p class="content">product</p>
             </div>
