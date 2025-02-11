@@ -113,17 +113,17 @@ body{
 .btn_locations{
     color: #232222;
     background-color: #ffca08;
+    border: 3px solid #ffca08;
     font-size: 18px;
     width: auto;
     border-radius: 30px;
     width: max-content;
     padding: 5px 35px;
+    transition: all 0.3s ease-in-out;
 }
 .btn_locations:hover{
     color:#ffca08;
     background-color: #1C1601;
-    border: 3px solid #ffca08;
-    
 }
 .gap_section_3{
     height: 80px;
@@ -188,7 +188,13 @@ body{
     margin-bottom: 10px; 
     font-size: 14px;
     color: #595959;
+    border: none;
 }
+
+#section_6 textarea{
+    resize: none;
+}
+
 #section_6 .btn_section6{
     display: flex;
     justify-content: center;
