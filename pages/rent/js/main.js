@@ -6,7 +6,7 @@ drawCars();
 
 const sort_options = document.querySelector("#sort-options");
 
-sort_options.addEventListener("click",function()
+sort_options.addEventListener("change",function()
 {
     console.log(this.value);
     switch(this.value)
