@@ -154,10 +154,16 @@ header .btn-i i{
     font-weight: 500;
     position: absolute;
     top:0;
-    right: 0;
-    display: none;
+    right: -100%;
     position: absolute;
-    overflow: hidden;
+    overflow: hidden;  
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bar.active{
+    right:0;
 }
 .bar .li a{
     color:#1c1601a0;
@@ -167,9 +173,12 @@ header .btn-i i{
     padding: 15px 20px;
     transition: transform 0.5s ease-out;
 }
-
-.bar hr{
-    color:#6767674c;
+.bar .wrap{
+    width: 100%;
+}
+hr{
+   background-color: #ddd;
+    width: 100%;
 }
 .bar .li::after{
     content: '';
@@ -258,12 +267,6 @@ header .btn-i i{
 .bar .social ul li:hover{
     color:#ffffff;
 }
-.bar-animation{
-    animation: animate-bar 0.5s ease-out forwards;
-}
-.bar-animation-out{
-    animation: animate-bar-out 0.5s ease-out forwards;
-}
 .close-bar{
     width: 50px;
     height: 50px;
@@ -282,24 +285,6 @@ header .btn-i i{
 }
 .close-bar:hover i{
  transform: rotate(-180deg);
-}
-@keyframes animate-bar-out {
-    0%{
-       transform: translateX(0); 
-    }
-    100%{
-
-        transform: translateX(100%); 
-     }
-}
-@keyframes animate-bar {
-    0%{
-       transform: translateX(100%); 
-    }
-    100%{
-
-        transform: translateX(0); 
-     }
 }
 @keyframes animate-bar-text {
     0%{
