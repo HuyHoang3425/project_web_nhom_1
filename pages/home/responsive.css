@@ -1,3 +1,13 @@
+@media (min-width: 1240px) 
+{
+    .bar{
+        display: none;
+    }
+    .close-bar
+    {
+        display: none;
+    }
+}
 @media (max-width: 1240px) {
 
     /* header */

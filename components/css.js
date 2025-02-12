@@ -172,13 +172,16 @@ header .btn-i i{
 .bar .li{
     padding: 15px 20px;
     transition: transform 0.5s ease-out;
+    border:none
 }
 .bar .wrap{
     width: 100%;
 }
 hr{
-   background-color: #ddd;
     width: 100%;
+    height: 2px;
+    background-color: #5c5c5c;
+    border: none;
 }
 .bar .li::after{
     content: '';
@@ -194,7 +197,7 @@ hr{
     transform: translateX(20px);
 }
 .bar .li:hover a{
-    color:#1C1601
+    color:#1C1601;
 }
 .bar .social{
     position: absolute;
@@ -680,4 +683,14 @@ footer p{
 
     /* chat */
 }
+@media (min-width: 1240px) 
+{
+    .bar{
+        display: none;
+    }
+    .close-bar
+    {
+        display: none;
+    }
+}git ad
 `
