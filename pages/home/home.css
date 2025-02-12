@@ -541,12 +541,12 @@ iframe {
 @keyframes animate2 {
     0% {
         opacity: 0;
-        transform: translateX(-50px); /* Bắt đầu từ vị trí trên */
+        transform: translateX(-50px);
     }
     100% {
         opacity: 1;
-        transform: translateX(0); /* Kết thúc tại vị trí ban đầu */
-    }
+        transform: translateX(0); 
+}
 }
 @keyframes blur {
     0% {
