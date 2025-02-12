@@ -18,16 +18,13 @@ const bar = document.querySelector(".bar");
 const btnBar = document.querySelector("header .btn-i i");
 btnBar.onclick = function()
 {
-  bar.classList.add("show-screen");
-  bar.classList.remove("bar-animation-out");
-  bar.classList.add("bar-animation");
+  bar.classList.add("active");
   closeBar.classList.add("show-screen");
 }
 closeBar.onclick = ()=>{
-  bar.classList.add("bar-animation-out");
+
+  bar.classList.remove("active");
   closeBar.classList.remove("show-screen");
-  bar.classList.remove("bar-animation");
-  setTimeout(() =>{bar.classList.remove("show-screen")},1000);
 };
 
 //scroll
@@ -39,7 +36,7 @@ window.addEventListener("scroll", function () {
     if (currentScrollTop > zero) {
       header.classList.remove("header-down");
       header.classList.add("header-up");
-      bar.classList.remove("show-screen");
+      bar.classList.remove("active");
       closeBar.classList.remove("show-screen");
     } else if (currentScrollTop < zero) {
       header.classList.remove("header-up");
