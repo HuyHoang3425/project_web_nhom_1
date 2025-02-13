@@ -110,7 +110,6 @@ const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const dots = document.querySelectorAll(".dots li");
 const img = document.querySelector(".slider img");
-console.log(dots);
 let active = 0;
 let lenghtItem = item.length - 2;
 next.addEventListener("click", function () {

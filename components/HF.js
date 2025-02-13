@@ -9,7 +9,6 @@ document.body.insertAdjacentHTML('afterbegin', Header);
 document.body.insertAdjacentHTML('beforeend', Footer);
 //css
 const style = document.createElement("style");
-console.log(style);
 style.innerHTML = css;
 document.head.appendChild(style);
 //sửa content theo page

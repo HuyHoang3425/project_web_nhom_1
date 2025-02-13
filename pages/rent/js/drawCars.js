@@ -5,7 +5,6 @@ import { params } from "./variable.js";
 
 export function drawCars() {
     const api = `${API_CARS}?_sort=${params.sort}&_order=${params.order}`
-    console.log(api);
     fetchAPI(api)
         .then(data => {
             const showing = document.querySelector(".option .showing");
