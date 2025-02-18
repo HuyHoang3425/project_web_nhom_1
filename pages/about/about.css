@@ -290,6 +290,7 @@
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 100px;
+
 }
 
 /* choose us picture */
@@ -338,7 +339,7 @@
 }
 
 .content-in-picture-choose-us i:hover {
-    font-size: 330%;
+    transform: scale(1.1);
 }
 
 /* choose us content */
