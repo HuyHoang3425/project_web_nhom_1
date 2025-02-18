@@ -5,6 +5,9 @@
     left: 48px;
     top: 37px;
   }
+    #section_2 .gap_section_2 {
+      height: 135px;
+    }
   .svg-2,
   .svg-4 {
     height: 160px;
@@ -20,9 +23,9 @@
     margin-bottom: 4px;
     margin-top: 20px;
   }
-  #section_3 .content_right #toronto_map,
-  #california_map,
-  #newyork_map {
+  #section_3 .content_right .toronto_map,
+  .california_map,
+  .newyork_map {
     width: 91%;
     margin-left: 5%;
   }
@@ -55,6 +58,10 @@
   .title_content2 {
     font-size: 28px;
   }
+
+  #section_3 .gap_3_1,.gap_3_2 {
+      height: 60px;
+    }
 
   #section_4 img {
     top: -68px;

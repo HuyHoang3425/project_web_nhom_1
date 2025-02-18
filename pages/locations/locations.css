@@ -66,7 +66,7 @@ body{
     z-index: 2;
 }
 #section_2 .gap_section_2{
-    height: 130px;
+    height: 200px;
     /* margin-top: -10px; */
     background-color: #1C1601;
 }
@@ -79,10 +79,9 @@ body{
     display: flex;
     flex-direction: row;
 }
-#section_3 .content_right #toronto_map, #california_map,#newyork_map {
-    width: 300px;
+#section_3 .content_right .toronto_map, .california_map,.newyork_map {
+    width: 400px;
     height: 300px;
-    padding: 10px;
     margin-top: 20px;
 }
 #section_3 .content_left{
@@ -103,6 +102,7 @@ body{
         color: #ffffff;
         padding-left: 40px;
         margin-bottom: 30px;
+        text-align: justify;
     }
 
 }
@@ -126,7 +126,7 @@ body{
     background-color: #1C1601;
 }
 .gap_section_3{
-    height: 80px;
+    height: 100px;
     background-color: #1C1601;
 }
 .gap2_section_3{
