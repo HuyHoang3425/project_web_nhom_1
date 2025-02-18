@@ -1,0 +1,165 @@
+@media (max-width: 1240px) {
+}
+@media (max-width: 1024px) {
+  #section_1,
+  #section_5 {
+    .title_content1 {
+      font-size: 18px;
+    }
+    .title_content2 {
+      font-size: 28px;
+    }
+  }
+  #section_1 .gap_section_1 {
+    height: 160px;
+  }
+  #section_2 .svg,
+  #section_4 .svg {
+    height: 100px;
+  }
+  #section_2 img {
+    left: 4%;
+    top: -50%;
+  }
+
+  #section_2,
+  #section_4 {
+    img {
+      width: 80%;
+    }
+  }
+  #section_3 {
+    flex-direction: column;
+    row-gap: 32px;
+    padding: 4%;
+  }
+  #section_3 .wrp1_s3,
+  .wrp2_s3,
+  .wrp3_s3 {
+    width: 100%;
+  }
+  #section_3 .wrp1_s3,
+  .wrp2_s3,
+  .wrp3_s3 {
+    .price_content::before {
+      left: 39%;
+    }
+  }
+  #section_3 .wrp1_s3,
+  .wrp2_s3,
+  .wrp3_s3 {
+    .content {
+      font-size: 20px;
+      line-height: 36px;
+    }
+  }
+  #section_4 {
+    .car {
+      top: -242px;
+      right: 100px;
+    }
+  }
+  #section_4 .gap_section_2 {
+    height: 200px;
+  }
+  #section_6 {
+    column-gap: 0px;
+    .wrp_logo {
+      width: 180px;
+      height: 60px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  #section_3 .wrp1_s3,
+  .wrp2_s3,
+  .wrp3_s3 {
+    .price_content::before {
+      left: 37%;
+    }
+  }
+  #section_6 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    width: 90%;
+    margin: auto;
+    .wrp_logo {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #section_2 img {
+    top: -68%;
+  }
+  #section_2 .gap_section_2 {
+    height: 84px;
+  }
+  #section_3 {
+    padding: 8%;
+  }
+  #section_3 .wrp1_s3,
+  .wrp2_s3,
+  .wrp3_s3 {
+    .price_content::before {
+      left: 34%;
+    }
+  }
+  #section_4 .gap_section_2 {
+    height: 80px;
+  }
+  .gap_under {
+    height: 240px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gap_above {
+    height: 60px;
+  }
+  #section_2 .svg,
+  #section_4 .svg {
+    height: 70px;
+  }
+  #section_1,
+  #section_5 {
+    .title_content1 {
+      font-size: 16px;
+    }
+    .title_content2 {
+      font-size: 21px;
+    }
+  }
+  #section_1 .gap_section_1 {
+    height: 60px;
+  }
+  #section_2 img {
+    top: -33%;
+  }
+
+  #section_2,
+  #section_4 {
+    img {
+      width: 85%;
+    }
+  }
+  .gap_section_3 {
+    height: 100px;
+  }
+  #section_3 .wrp1_s3, .wrp2_s3, .wrp3_s3 {
+        .price_content::before {
+            left: 18%;
+        }
+    }
+  #section_4 {
+    .car {
+      top: -121px;
+      right: 26px;
+    }
+  }
+  .gap_under {
+    height: 160px;
+  }
+}

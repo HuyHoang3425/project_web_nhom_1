@@ -112,16 +112,18 @@
     background-color: #fff;
     border-radius: 50px;
     /* align-content: center; */
-    width: max-content;
-    padding: 30px;
+    width: 26%;
+    padding: 28px;
     transition: transform 0.5s ease;
 
     .value {
         background-color: var(--color-tertiary);
         border-radius: 50px;
         text-align: center;
-        padding: 20px 35px;
+        padding: 20px;
         margin-bottom: 32px;
+        border: 2px solid white;
+        font-size: 18px;
 
         a {
             color: var(--color-secondary);
@@ -134,26 +136,29 @@
     }
 
     .price {
-        position: relative;
+        /* position: relative; */
         text-align: center;
         font-size: 40px;
         font-weight: 700;
         margin-bottom: 68px;
 
-        span {
+        .month {
             font-size: 14px;
         }
     }
+    .price_content{
+        position: relative;
+    }
 
-    .price::before {
+    .price_content::before {
         content: "$";
         position: absolute;
         font-size: 33px;
-        top: -9px;
-        left: 48px;
+        top: -12%;
+        left: 24%;;
     }
 
-    .price::after {
+    .price_content::after {
         content: "";
         position: absolute;
         width: 100%;
@@ -161,7 +166,7 @@
         opacity: 0.3;
         height: 1px;
         left: 0;
-        bottom: -20px;
+        bottom: -20%;
         /* z-index: -1; */
     }
 
@@ -180,7 +185,10 @@
         background-color: var(--color-secondary);
         border-radius: 50px;
         text-align: center;
-        padding: 20px 92px;
+        padding: 20px 0px;
+        .content_btn{
+            font-size: 18px;
+        }
     }
 
     .btn_gR:hover {
@@ -197,9 +205,9 @@
 }
 
 #section_3 .wrp2_s3 {
-    padding: 46px 30px;
+    padding: 46px 28px;
 
-    .price::after {
+    .price_content::after {
         content: "";
         position: absolute;
         width: 100%;
