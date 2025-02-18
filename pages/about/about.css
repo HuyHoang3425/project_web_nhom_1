@@ -290,13 +290,13 @@
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 100px;
-
+    position: relative;
 }
 
 /* choose us picture */
 
 .picture-choose-us img {
-    position: relative;
+    /* position: relative; */
     width: 550px;
     height: 600px;
     border-radius: 20px;
@@ -309,8 +309,8 @@
     gap: 0px;
     justify-content: center;
     align-items: center;
-    height: 125%;
-    left: 12%;
+    height: 950px;
+    left: 200px;
 }
 
 .word-in-picture-choose-us {
