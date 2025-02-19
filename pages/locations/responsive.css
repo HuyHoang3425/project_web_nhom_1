@@ -1,0 +1,163 @@
+@media (max-width: 1240px) {
+}
+@media (max-width: 1024px) {
+  #section_2 img {
+    left: 48px;
+    top: 37px;
+  }
+    #section_2 .gap_section_2 {
+      height: 135px;
+    }
+  .svg-2,
+  .svg-4 {
+    height: 160px;
+  }
+  #section_3 {
+    padding: 0px 30px 0px 30px;
+  }
+  #section_3 .toronto_section_3 {
+    flex-direction: column;
+  }
+  #section_3 .content_left h3 {
+    font-size: 30px;
+    margin-bottom: 4px;
+    margin-top: 20px;
+  }
+  #section_3 .content_right .toronto_map,
+  .california_map,
+  .newyork_map {
+    width: 91%;
+    margin-left: 5%;
+  }
+  #section_3 .content_left {
+    padding-right: 4%;
+    text-align: justify;
+  }
+  #section_4 img {
+    right: 60px;
+  }
+}
+@media (max-width: 992px) {
+  #section_2 img {
+    top: -16px;
+    width: 45%;
+  }
+  #section_1 .gap_section_1 {
+    height: 48px;
+  }
+  .svg-2,
+  .svg-4 {
+    height: 100px;
+  }
+  #section_2 .gap_section_2 {
+    height: 96px;
+  }
+  .title_content1 {
+    font-size: 18px;
+  }
+  .title_content2 {
+    font-size: 28px;
+  }
+
+  #section_3 .gap_3_1,.gap_3_2 {
+      height: 60px;
+    }
+
+  #section_4 img {
+    top: -68px;
+    width: 45%;
+  }
+  #section_4 .gap_section_3 {
+    height: 48px;
+  }
+  #section_6 input,
+  select {
+    width: 270px;
+  }
+  #section_6 textarea {
+    width: 550px;
+  }
+}
+@media (max-width: 768px) {
+  #section_3 .content_left {
+    padding-left: 0%;
+  }
+  #section_3 .content_left h3 {
+    text-align: center;
+  }
+  #section_3 .btn_locations {
+    margin: 0 auto;
+  }
+  .gap_under {
+    height: 200px;
+  }
+  .gap_section_3 {
+    height: 140px;
+  }
+}
+@media (max-width: 576px) {
+  .gap_above {
+    height: 52px;
+  }
+  .gap_under {
+    height: 120px;
+  }
+
+  .title_content1 {
+    font-size: 16px;
+  }
+  .title_content2 {
+    font-size: 23px;
+  }
+
+  #section_1 .gap_section_1 {
+    width: 100%;
+    height: 40px;
+  }
+  .svg-2,
+  .svg-4 {
+    height: 70px;
+  }
+  #section_2 img {
+    top: -16px;
+    width: 84%;
+    left: 23px;
+  }
+       
+  #section_3 .content_right #toronto_map,
+  #california_map,
+  #newyork_map {
+    width: 100%;
+    margin-left: 0%;
+  }
+  #section_3 .content_left p {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .gap_section_3 {
+    height: 120px;
+  }
+  #section_4 img {
+    width: 84%;
+    top: -64px;
+    right: 32px;
+  }
+  .flex {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  #section_6 form {
+    padding: 20px 24px 30px;
+  }
+  #section_6 input,
+  select {
+    width: 320px;
+  }
+  #section_6 textarea {
+    width: 320px;
+    height: 170px;
+  }
+}
+@media (max-width: 576px) {
+  
+}
