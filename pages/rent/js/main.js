@@ -1,7 +1,5 @@
 import { drawCars } from "./drawCars.js";
 import { params } from "./variable.js";
-
-
 drawCars();
 
 const sort_options = document.querySelector("#sort-options");

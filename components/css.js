@@ -303,7 +303,7 @@ hr{
     bottom:10px;
     left: 10px;
     font-size: 30px;
-    z-index: 9999;
+    z-index: 999;
     width: 60px;
     height: 60px;
     border-radius: 50%;

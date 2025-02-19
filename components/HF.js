@@ -51,11 +51,12 @@ btnBar.onclick = function()
 {
   bar.classList.add("active");
   closeBar.classList.add("show-screen");
+  document.body.style.overflow = "hidden";
 }
 closeBar.onclick = ()=>{
-
   bar.classList.remove("active");
   closeBar.classList.remove("show-screen");
+  document.body.style.overflow = "";
 };
 
 //scroll

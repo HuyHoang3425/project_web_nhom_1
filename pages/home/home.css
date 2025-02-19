@@ -306,7 +306,7 @@ hr{
     bottom:10px;
     left: 10px;
     font-size: 30px;
-    z-index: 9999;
+    z-index: 999;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -417,7 +417,7 @@ hr{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 9999;
 }
-.close {
+/* .close {
     text-align: right;
     cursor: pointer;
     font-size: 20px;
@@ -430,7 +430,7 @@ hr{
     align-items: center;
     justify-content: center;
     border-radius: 0 10px 0 0;
-}
+} */
 
 iframe {
     width: 100%;
@@ -1193,4 +1193,16 @@ footer p{
 /* footer */
 .show-screen{
     display: block;
+}
+
+/* overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none;
 }
