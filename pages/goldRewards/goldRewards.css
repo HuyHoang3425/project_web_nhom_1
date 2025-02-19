@@ -159,17 +159,6 @@
     top: -10px;
     right: 100%;
   }
-
-  /* .price_content::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        background-color: #1c1601;
-        opacity: 0.3;
-        height: 1px;
-        left: 0;
-        bottom: -20%;
-    } */
   .line1 {
     width: 100%;
     background-color: #1c1601;
@@ -197,6 +186,7 @@
     column-gap: 10px;
     justify-content: center;
     background-color: var(--color-secondary);
+    border: 2px solid #ffca08;
     border-radius: 50px;
     text-align: center;
     padding: 20px 0px;

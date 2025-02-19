@@ -38,14 +38,6 @@
   .wrp3_s3 {
     width: 100%;
   }
-  #section_3 .wrp1_s3,
-  .wrp2_s3,
-  .wrp3_s3 {
-    .content {
-      font-size: 20px;
-      line-height: 36px;
-    }
-  }
   #section_4 {
     .car {
       top: -242px;
@@ -66,15 +58,6 @@
 @media (max-width: 992px) {
   #section_2 .gap_section_2 {
     height: 132px;
-  }
-  #section_3 .wrp1_s3,
-  .wrp2_s3,
-  .wrp3_s3 {
-    & .btn_gR {
-      .content_btn {
-        font-size: 18px;
-      }
-    }
   }
   #section_4 .gap_section_2 {
     height: 130px;
@@ -142,6 +125,15 @@
       width: 85%;
     }
   }
+    #section_3 .wrp1_s3,
+    .wrp2_s3,
+    .wrp3_s3 {
+      & .btn_gR {
+        .content_btn {
+          font-size: 14px;
+        }
+      }
+    }
   .gap_section_3 {
     height: 100px;
   }
