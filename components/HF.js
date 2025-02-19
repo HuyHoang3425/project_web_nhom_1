@@ -9,7 +9,6 @@ document.body.insertAdjacentHTML('afterbegin', Header);
 document.body.insertAdjacentHTML('beforeend', Footer);
 //css
 const style = document.createElement("style");
-console.log(style);
 style.innerHTML = css;
 document.head.appendChild(style);
 //sửa content theo page
@@ -50,16 +49,13 @@ const bar = document.querySelector(".bar");
 const btnBar = document.querySelector("header .btn-i i");
 btnBar.onclick = function()
 {
-  bar.classList.remove("bar-animation-out");
-  bar.classList.add("show-screen");
-  bar.classList.add("bar-animation");
+  bar.classList.add("active");
   closeBar.classList.add("show-screen");
 }
 closeBar.onclick = ()=>{
-  bar.classList.add("bar-animation-out");
+
+  bar.classList.remove("active");
   closeBar.classList.remove("show-screen");
-  bar.classList.remove("bar-animation");
-  setTimeout(() =>{bar.classList.remove("show-screen")},1000);
 };
 
 //scroll
@@ -71,9 +67,12 @@ window.addEventListener("scroll", function () {
     if (currentScrollTop > zero) {
       header.classList.remove("header-down");
       header.classList.add("header-up");
+      bar.classList.remove("active");
+      closeBar.classList.remove("show-screen");
     } else if (currentScrollTop < zero) {
       header.classList.remove("header-up");
       header.classList.add("header-down");
+      
     }
   } else {
     header.classList.remove("header-down");
@@ -84,3 +83,21 @@ window.addEventListener("scroll", function () {
 });
 
 //scroll
+
+//chat
+const chat = document.querySelector(".chat");
+const cmt = document.querySelector(".chat .cmt");
+const cls = document.querySelector(".chat .cls");
+const message = document.querySelector(".message");
+chat.addEventListener("click",function()
+{
+  if (cmt.style.display === 'block') {
+    cmt.style.display = 'none';  
+    cls.style.display = 'block';
+    message.classList.add("show-screen");
+  } else {
+    cmt.style.display = 'block'; 
+    cls.style.display = 'none';  
+    message.classList.remove("show-screen");
+  }
+})
