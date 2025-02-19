@@ -1,0 +1,161 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "name": "Car 1",
+      "rating": 4,
+      "reviews": 1,
+      "price": {
+        "original": 399,
+        "discounted": 299,
+        "discount": 25
+      },
+      "description": "Car rental agencies primarily serve people who require a temporary vehicle, for example, those who do not own their own car, travelers who are out of town, or owners of damaged or destroyed vehicles who are awaiting repair or insurance compensation. Car rental agencies may also serve the self-moving industry needs, by renting vans or trucks, and in certain markets, other types of vehicles such as motorcycles or scooters may also be offered. Alongside the basic rental of a vehicle, car rental agencies typically also offer extra products such as insurance, global positioning system (GPS) navigation systems, entertainment systems, mobile phones, portable WiFi and child safety seats.",
+      "details": {
+        "brand": "XTRA",
+        "sku": "SKU_1077",
+        "status": "111 in stock",
+        "tags": ["14 Inch", "Black", "Chrome"],
+        "categories": ["Dunlop"]
+      },
+      "image": "../../assets/images/rent/p1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Car 2",
+      "rating": 4,
+      "reviews": 1,
+      "price": {
+        "original": 259,
+        "discounted": 259,
+        "discount": 0
+      },
+      "description": "Car rental agencies primarily serve people who require a temporary vehicle, for example, those who do not own their own car, travelers who are out of town, or owners of damaged or destroyed vehicles who are awaiting repair or insurance compensation. Car rental agencies may also serve the self-moving industry needs, by renting vans or trucks, and in certain markets, other types of vehicles such as motorcycles or scooters may also be offered. Alongside the basic rental of a vehicle, car rental agencies typically also offer extra products such as insurance, global positioning system (GPS) navigation systems, entertainment systems, mobile phones, portable WiFi and child safety seats.",
+      "details": {
+        "brand": "BrandXTRA",
+        "sku": "SKU_1076",
+        "status": "81 in stock",
+        "tags": ["16 Inch", "Colored", "Silver Grey"],
+        "categories": ["Falken"]
+      },
+      "image": "../../assets/images/rent/p2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Car 3",
+      "rating": 4,
+      "reviews": 1,
+      "price": {
+        "original": 167,
+        "discounted": 167,
+        "discount": 0
+      },
+      "description": "Car rental agencies primarily serve people who require a temporary vehicle, for example, those who do not own their own car, travelers who are out of town, or owners of damaged or destroyed vehicles who are awaiting repair or insurance compensation. Car rental agencies may also serve the self-moving industry needs, by renting vans or trucks, and in certain markets, other types of vehicles such as motorcycles or scooters may also be offered. Alongside the basic rental of a vehicle, car rental agencies typically also offer extra products such as insurance, global positioning system (GPS) navigation systems, entertainment systems, mobile phones, portable WiFi and child safety seats.",
+      "details": {
+        "brand": "BrandXTRA",
+        "sku": "SKU_1075",
+        "status": "79 in stock",
+        "tags": ["16 Inch", "Black", "Chrome"],
+        "categories": ["Ford"]
+      },
+      "image": "../../assets/images/rent/p3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Car 4",
+      "rating": 4,
+      "reviews": 1,
+      "price": {
+        "original": 402,
+        "discounted": 402,
+        "discount": 0
+      },
+      "description": "Car rental agencies primarily serve people who require a temporary vehicle, for example, those who do not own their own car, travelers who are out of town, or owners of damaged or destroyed vehicles who are awaiting repair or insurance compensation. Car rental agencies may also serve the self-moving industry needs, by renting vans or trucks, and in certain markets, other types of vehicles such as motorcycles or scooters may also be offered. Alongside the basic rental of a vehicle, car rental agencies typically also offer extra products such as insurance, global positioning system (GPS) navigation systems, entertainment systems, mobile phones, portable WiFi and child safety seats.",
+      "details": {
+        "brand": "BrandXTRA",
+        "sku": "SKU_1074",
+        "status": "90 in stock",
+        "tags": ["18 Inch", "Black", "Classic"],
+        "categories": ["BMW"]
+      },
+      "image": "../../assets/images/rent/p4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Car 5",
+      "rating": 4,
+      "reviews": 1,
+      "price": {
+        "original": 399,
+        "discounted": 399,
+        "discount": 0
+      },
+      "description": "Car rental agencies primarily serve people who require a temporary vehicle, for example, those who do not own their own car, travelers who are out of town, or owners of damaged or destroyed vehicles who are awaiting repair or insurance compensation. Car rental agencies may also serve the self-moving industry needs, by renting vans or trucks, and in certain markets, other types of vehicles such as motorcycles or scooters may also be offered. Alongside the basic rental of a vehicle, car rental agencies typically also offer extra products such as insurance, global positioning system (GPS) navigation systems, entertainment systems, mobile phones, portable WiFi and child safety seats.",
+      "details": {
+        "brand": "BrandXTRA",
+        "sku": "SKU_1073",
+        "status": "99 in stock",
+        "tags": ["20 Inch", "Chrome"],
+        "categories": ["Ford"]
+      },
+      "image": "../../assets/images/rent/p5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Car 6",
+      "rating": 4,
+      "reviews": 1,
+      "price": {
+        "original": 206,
+        "discounted": 206,
+        "discount": 0
+      },
+     "description": "Car rental agencies primarily serve people who require a temporary vehicle, for example, those who do not own their own car, travelers who are out of town, or owners of damaged or destroyed vehicles who are awaiting repair or insurance compensation. Car rental agencies may also serve the self-moving industry needs, by renting vans or trucks, and in certain markets, other types of vehicles such as motorcycles or scooters may also be offered. Alongside the basic rental of a vehicle, car rental agencies typically also offer extra products such as insurance, global positioning system (GPS) navigation systems, entertainment systems, mobile phones, portable WiFi and child safety seats.",
+      "details": {
+        "brand": "BrandXTRA",
+        "sku": "SKU_1072",
+        "status": "120 in stock",
+        "categories": ["Toyota"]
+      },
+      "image": "../../assets/images/rent/p6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Car 7",
+      "rating": 4,
+      "reviews": 1,
+      "price": {
+        "original": 208,
+        "discounted": 208,
+        "discount": 0
+      },
+      "description": "Car rental agencies primarily serve people who require a temporary vehicle, for example, those who do not own their own car, travelers who are out of town, or owners of damaged or destroyed vehicles who are awaiting repair or insurance compensation. Car rental agencies may also serve the self-moving industry needs, by renting vans or trucks, and in certain markets, other types of vehicles such as motorcycles or scooters may also be offered. Alongside the basic rental of a vehicle, car rental agencies typically also offer extra products such as insurance, global positioning system (GPS) navigation systems, entertainment systems, mobile phones, portable WiFi and child safety seats.",
+      "details": {
+        "brand": "BrandXTRA",
+        "sku": "SKU_1071",
+        "status": "104 in stock",
+        "categories": ["Hankook"]
+      },
+      "image": "../../assets/images/rent/p7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Car 8",
+      "rating": 5,
+      "reviews": 1,
+      "price": {
+        "original": 399,
+        "discounted": 399,
+        "discount": 0
+      },
+      "description": "Car rental agencies primarily serve people who require a temporary vehicle, for example, those who do not own their own car, travelers who are out of town, or owners of damaged or destroyed vehicles who are awaiting repair or insurance compensation. Car rental agencies may also serve the self-moving industry needs, by renting vans or trucks, and in certain markets, other types of vehicles such as motorcycles or scooters may also be offered. Alongside the basic rental of a vehicle, car rental agencies typically also offer extra products such as insurance, global positioning system (GPS) navigation systems, entertainment systems, mobile phones, portable WiFi and child safety seats.",
+      "details": {
+        "brand": "BrandXTRA",
+        "sku": "SKU_1070",
+        "status": "105 in stock",
+        "categories": ["Ford", "Good Year"]
+      },
+      "image": "../../assets/images/rent/p8.jpg"
+    }
+  ]
+}

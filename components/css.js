@@ -1,6 +1,6 @@
 export const css = `
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
-
+/* header */
 header {
     display: flex;
     align-items: center;
@@ -154,10 +154,16 @@ header .btn-i i{
     font-weight: 500;
     position: absolute;
     top:0;
-    right: 0;
-    display: none;
+    right: -100%;
     position: absolute;
-    overflow: hidden;
+    overflow: hidden;  
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bar.active{
+    right:0;
 }
 .bar .li a{
     color:#1c1601a0;
@@ -166,9 +172,16 @@ header .btn-i i{
 .bar .li{
     padding: 15px 20px;
     transition: transform 0.5s ease-out;
+    border:none
 }
-.bar hr{
-    color:#6767674c;
+.bar .wrap{
+    width: 100%;
+}
+hr{
+    width: 100%;
+    height: 2px;
+    background-color: #5c5c5c;
+    border: none;
 }
 .bar .li::after{
     content: '';
@@ -184,7 +197,7 @@ header .btn-i i{
     transform: translateX(20px);
 }
 .bar .li:hover a{
-    color:#1C1601
+    color:#1C1601;
 }
 .bar .social{
     position: absolute;
@@ -257,12 +270,6 @@ header .btn-i i{
 .bar .social ul li:hover{
     color:#ffffff;
 }
-.bar-animation{
-    animation: animate-bar 0.5s ease-out forwards;
-}
-.bar-animation-out{
-    animation: animate-bar-out 0.5s ease-out forwards;
-}
 .close-bar{
     width: 50px;
     height: 50px;
@@ -282,24 +289,6 @@ header .btn-i i{
 .close-bar:hover i{
  transform: rotate(-180deg);
 }
-@keyframes animate-bar-out {
-    0%{
-       transform: translateX(0); 
-    }
-    100%{
-
-        transform: translateX(100%); 
-     }
-}
-@keyframes animate-bar {
-    0%{
-       transform: translateX(100%); 
-    }
-    100%{
-
-        transform: translateX(0); 
-     }
-}
 @keyframes animate-bar-text {
     0%{
        transform: translateX(90px); 
@@ -308,6 +297,113 @@ header .btn-i i{
 
         transform: translateX(0); 
      }
+}
+.chat{
+    position:fixed;
+    bottom:10px;
+    left: 10px;
+    font-size: 30px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FFCA08;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.chat .cmt{
+    display: block;
+    animation:animate 0.3s ease-out forwards;
+}
+.chat .cls{
+    display:none;
+    animation:animate 0.3s ease-out forwards;
+}
+@keyframes animate {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.message{
+    position: fixed;
+    bottom:100px;
+    left: 30px;
+    z-index: 9999;
+    width: 300px;
+    height: 450px;
+    background-color: #fff;
+    display: none;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    animation:show 0.3s ease-out forwards;
+}
+.message .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.message .card-1{
+    background-color: #FFCA08;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0 0 ;
+}
+.message .card-1 .title{
+    font-size: 18px;
+    margin: 0;
+    font-weight: 400;
+    color:#333333;
+}
+.message img{
+    width: 15px;
+    height:15px;
+}
+.message .card-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+.message .card-2 .content{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.message .card-2 .content span{
+    font-size: 14px;
+}
+.message .card-2 .input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.message .card-2 .input input{
+    border: none;
+    outline: none;
+    width: 70%;
+}
+.message .card-2 .input .icon{
+    display: flex;
+    gap:10px;
+    font-size: 18px;
+}
+/* header */
+.show-screen{
+    display: block;
 }
 .section-1{
     background-image: url("../../assets/images/rent/background-1.jpg");
@@ -539,6 +635,7 @@ footer p{
     footer .social li {
         width: 40px;
         height: 40px;
+        cursor:pointer;
     }
     footer .card .title {
         font-size: 18px;
@@ -569,5 +666,31 @@ footer p{
         margin-bottom: 40px;
         font-size: 14px;
     }
+      /* chat */
+    .message {
+        width: 60%;
+    }
+
+    .message .card-1 .title {
+        font-size: 14px;
+    }
+    .message .card-2 .content span {
+        font-size: 10px;
+    }
+    .message .card-2 i {
+        font-size: 12px;
+    }
+
+    /* chat */
 }
+@media (min-width: 1240px) 
+{
+    .bar{
+        display: none;
+    }
+    .close-bar
+    {
+        display: none;
+    }
+}git ad
 `

@@ -1,10 +1,18 @@
 @media (max-width:1240px) {
 }
 @media (max-width:992px) {
-    .section-2 .list-product{
+    .section-2 .list-products{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap:70px 20px;
+    }
+    .info .card_1,
+    .card_2 {
+        width: 50%;
+        padding: 20px;
+    }
+    .info .card_1 img {
+        width:100%;
     }
 }
 @media (max-width:768px) {
@@ -15,7 +23,7 @@
     .section-2{
         padding: 30px;
     }
-    .section-2 .list-product{
+    .section-2 .list-products{
         grid-template-columns: 1fr 1fr;
     }
     .section-2 .option span{
@@ -25,6 +33,41 @@
     .section-2 .option select{
         font-size: 12px;
         padding:7px 14px;
+    } 
+    .info.show{
+       align-items: center;
+       flex-direction: column;
+    }
+    .info .card_1,
+    .card_2 {
+        width: 90%;
+    }
+    .card_1{display: flex;align-items: center;justify-content: center;}
+    .info .card_1 img {
+        width:80%;
+    }
+    
+    .info .card_2 .car_name {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .info .card_2 .car_price {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .info .card_2 .car_decs {
+        margin-bottom: 15px;
+        color: #a1a1a1;
+    }
+    .close{
+        width: 30px;
+        height: 30px;
+        font-size: 1.5rem;
+        right: calc(10% - 30px);
     }
 }
 @media (max-width:576px) {
@@ -42,19 +85,19 @@
         margin-bottom: 40px;
         font-size: 14px;
     }
-    .section-2 .list-product .item{
+    .section-2 .list-products .item{
         background-color:#1C1601 ;
         height: auto;
         padding:5px;
         position: relative;
     }
-    .section-2 .list-product .item .btn-buy p{
+    .section-2 .list-products .item .btn-buy p{
         font-size: 12px;
     }
-    .section-2 .list-product .item .btn-buy i{
+    .section-2 .list-products .item .btn-buy i{
         font-size: 12px;
     }
-    .section-2 .list-product .item ul{
+    .section-2 .list-products .item ul{
         display: flex;
         display: flex;
         align-items: center;
@@ -67,21 +110,21 @@
         border-radius: 30px;
         opacity: 0;
     }
-    .section-2 .list-product .item ul i{
+    .section-2 .list-products .item ul i{
         padding:4px;
         border-radius: 20px;
         transition: all 0.3s ease-in-out;
     }
-    .section-2 .list-product .item ul{
+    .section-2 .list-products .item ul{
         padding:5px;
         left: calc((100% - 82px)/2);
         bottom: 20px;
   }
-    .section-2 .list-product .item .price{
+    .section-2 .list-products .item .price{
         padding:5px 10px;
         font-size: 14px;
     }
-    .section-2 .list-product .item .discount{
+    .section-2 .list-products .item .discount{
         width: 40px;
         height: 40px;
         font-size: 14px;
@@ -94,5 +137,33 @@
         display: flex;
         gap:5px;
         padding:5px 10px;
+    }
+    /* info */
+    .info{
+        padding: 10px;
+    }
+    .info .card_1,
+    .card_2 {
+        padding: 0;
+    }
+    .info .card_1 img {
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .info .card_2 .car_name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .info .card_2 .car_price {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .info .card_2 .car_decs {
+        margin-bottom: 10px;
+        color: #a1a1a1;
     }
 }
