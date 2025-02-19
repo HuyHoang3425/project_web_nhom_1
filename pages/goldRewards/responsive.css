@@ -89,9 +89,9 @@
       width: 100%;
     }
   }
-}
-.gap_under {
-  height: 200px;
+  .gap_under {
+    height: 200px;
+  }
 }
 
 @media (max-width: 768px) {
