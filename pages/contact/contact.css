@@ -94,6 +94,8 @@
     width: 970px;
     height: 200px;
     border-radius: 20px;
+    outline: none;
+    padding-left: 20px;
 }
 .one-title input{
     height: 200px;
@@ -113,6 +115,7 @@
     padding: 12px 24px;
     cursor: pointer;
     border-radius: 50px;
+    border: none;
 }
 /* .submit button{
     background-color: black;
