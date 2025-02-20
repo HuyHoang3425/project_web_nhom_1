@@ -11,7 +11,10 @@ links.forEach(link => {
   }
 });
 //nav
-
+const body = document.body;
+const overlay = document.createElement("div");
+overlay.classList.add("overlay");
+body.appendChild(overlay);
 //bar 
 const closeBar = document.querySelector(".close-bar");
 const bar = document.querySelector(".bar");
@@ -20,11 +23,14 @@ btnBar.onclick = function()
 {
   bar.classList.add("active");
   closeBar.classList.add("show-screen");
+  document.body.style.overflow = "hidden";
+  overlay.style.display = "block";
 }
 closeBar.onclick = ()=>{
-
   bar.classList.remove("active");
   closeBar.classList.remove("show-screen");
+  document.body.style.overflow = "";
+  overlay.style.display = "none";
 };
 
 //scroll
@@ -59,11 +65,20 @@ playvideo.addEventListener("click",function()
   const url = "https://www.youtube.com/embed/fY85ck-pI5c";
   video.src = url;
   document.getElementById("videoContainer").style.display = "block";
+  overlay.style.display = "block";
+  document.body.style.overflow = "hidden";
 });
 function hideVideo() {
   video.src ="";
   document.getElementById("videoContainer").style.display = "none";
+  overlay.style.display = "none";
+  document.body.style.overflow = "";
 }
+window.addEventListener("click", function (event) {
+  if (event.target === overlay) {
+      hideVideo();
+  }
+});
 
 // button-option
 const backgrounds = document.querySelectorAll(".section-1 .background");
