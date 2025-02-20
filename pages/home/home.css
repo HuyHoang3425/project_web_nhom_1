@@ -586,20 +586,33 @@ iframe {
     background-size: cover;
     display: none;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.inner-bg{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top:40%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .section-1 .background-2 .title{
-    position: absolute;
     color:#ffffff;
-    top: 35%;
-    left: calc((100% - 835.2px)/2); 
     font-size: 60px;
     animation: animate1 1s ease-out forwards;
+    margin-bottom: 20px;
     
 }
 .section-1 .background-2 .btn{
-    position: absolute;
-    top: 50%;
-    left: calc(100%/2 - 298.05px /2); 
     z-index: 2;
     animation: animate2 1s ease-out forwards;
 }
