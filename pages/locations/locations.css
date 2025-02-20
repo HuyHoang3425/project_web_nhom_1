@@ -1,7 +1,11 @@
-
+*{
+     margin: 0;
+     padding:0;
+     box-sizing: border-box;
+}
 body{
-    line-height: 2;
     font-size: 16px;
+    line-height:2;
 }
 .gap_above{
     height: 100px;
@@ -199,4 +203,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 12px;
+}
+.section-1 .title{
+    line-height:normal;
 }

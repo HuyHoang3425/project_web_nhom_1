@@ -204,6 +204,7 @@
 
     .section-1 .background-2 .btn {
         left: calc((100% - 220.66px)/2);
+        top:55%;
     }
 
     .section-1 .background-2 .text-blur {
@@ -336,7 +337,9 @@
     header img {
         width: 120px;
     }
-
+    header .btn-i{
+        gap:0;
+    }
     /* header */
 
     /* section-1 */
@@ -384,7 +387,10 @@
     .section-1 .background-2 .text-blur {
         width: 500px;
     }
-
+    .section-1 .background-2 .btn {
+        left: calc((100% - 225.59px)/2);
+        top: 45%;
+    }
     /* section-1 */
 
     /* .section-2 */
@@ -580,6 +586,15 @@
         height: 50px;
     }
 
+    .text-question {
+       margin-left: 20px;
+       margin-right: 20px;
+    }
+    .title {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     /* header */
     .bar .social {
         font-size: 12px;
@@ -638,9 +653,8 @@
 
     .section-1 .background-2 .btn {
         left: calc((100% - 141.43px)/2);
-        top: 40%
+        top: 46%;
     }
-
     .section-1 .background-2 .text-blur {
         width: 300px;
         top: 38%;

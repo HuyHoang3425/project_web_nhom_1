@@ -63,6 +63,10 @@ header li a::after{
     background-color: #FFCA08;
     transition: all 0.3s ease-in-out;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .btn:hover{
     background-color: rgba(0, 0, 0, 0);
     color:#FFCA08
@@ -523,9 +527,6 @@ footer p{
 .gap{
     height: 100px;
 }
-<<<<<<< HEAD
-
-=======
 /* overlay */
 .overlay {
     position: fixed;
@@ -540,7 +541,6 @@ footer p{
 .hidden{
     overflow:hidden;
 }
->>>>>>> main
 
 
 @media (max-width: 1240px) {
@@ -589,6 +589,9 @@ footer p{
     header img{
         width: 120px;
     }
+     header .btn-i{
+        gap:0;
+    }
     /* header */
 
     /* footer */
@@ -611,7 +614,7 @@ footer p{
     }
     /* footer */
      .section-1{
-        height: 200px;
+        height: 300px;
         justify-content: flex-end;
     }
 }

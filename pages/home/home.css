@@ -585,6 +585,7 @@ iframe {
     background-repeat: no-repeat;
     background-size: cover;
     display: none;
+    position: relative;
 }
 .section-1 .background-2 .title{
     position: absolute;
