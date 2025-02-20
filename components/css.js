@@ -63,7 +63,6 @@ header li a::after{
     background-color: #FFCA08;
     transition: all 0.3s ease-in-out;
 }
-
 .btn:hover{
     background-color: rgba(0, 0, 0, 0);
     color:#FFCA08
