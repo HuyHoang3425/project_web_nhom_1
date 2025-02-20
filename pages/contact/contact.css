@@ -118,3 +118,73 @@
     background-color: black;
     border-bottom-style: none;
 } */
+
+@media only screen and (max-width: 46.1875em) {
+    * {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header-contact-us-today {
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    .customer-information{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .father-two-title{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        gap: 0px;
+    }
+    .title-information input{
+        width: 350px;
+    }
+    .title-information select{
+        width: 350px;
+    }
+    .two-title{
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .one-title textarea{
+        width: 350px;
+        height: 200px;
+    }
+    .contact-us-today-content p{
+        font-size: 200%;
+    }
+    .customer-information{
+        margin-bottom: 80px;
+    }
+}
+
+/*tablet 740px->1024px*/
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    * {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .customer-information{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .father-two-title{
+        margin-left: 5px;
+    }
+    .title-information input{
+        width: 385px;
+    }
+    .title-information select{
+        width: 385px;
+    }
+    .one-title textarea{
+        width: 770px;
+        height: 200px;
+    }
+}
