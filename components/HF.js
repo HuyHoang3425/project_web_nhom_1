@@ -42,7 +42,10 @@ links.forEach(link => {
   }
 });
 //nav
-
+const body = document.body;
+const overlay = document.createElement("div");
+overlay.classList.add("overlay");
+body.appendChild(overlay);
 //bar 
 const closeBar = document.querySelector(".close-bar");
 const bar = document.querySelector(".bar");
@@ -51,12 +54,14 @@ btnBar.onclick = function()
 {
   bar.classList.add("active");
   closeBar.classList.add("show-screen");
-  document.body.style.overflow = "hidden";
+  body.classList.add("hidden");
+  overlay.style.display = "block";
 }
 closeBar.onclick = ()=>{
   bar.classList.remove("active");
   closeBar.classList.remove("show-screen");
-  document.body.style.overflow = "";
+  body.classList.remove("hidden");
+  overlay.style.display = "none";
 };
 
 //scroll
