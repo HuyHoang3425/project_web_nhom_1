@@ -60,7 +60,7 @@ export const Header =`
         <div class="btn-i">
             <i class="fa-solid fa-bars-staggered">
             </i>
-            <button class="btn">Request a Car</button>
+            <<a href="../contact/index.html"><button class="btn">Request a Car</button></a>
         </div>
         <ul class="bar" id="bar">
             <div class="wrap">

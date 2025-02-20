@@ -14,6 +14,14 @@
     .info .card_1 img {
         width:100%;
     }
+    .section-2 .list-products .item ul {
+        padding: 6px 12px;
+        left: calc((100% - 144px)/2);
+        bottom: 30px;
+    }
+    .section-2 .list-products .item ul i {
+        padding: 6px 12px;
+    }
 }
 @media (max-width:768px) {
     .section-1{
@@ -98,26 +106,23 @@
         font-size: 12px;
     }
     .section-2 .list-products .item ul{
-        display: flex;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding:10px 20px;
         position: absolute;
         left:calc((100% - 208px)/2);
         bottom:50px;
         background-color: #FEFEFE;
         border-radius: 30px;
         opacity: 0;
+        /* padding: 0; */
     }
     .section-2 .list-products .item ul i{
-        padding:4px;
+        padding:0 6px;
         border-radius: 20px;
-        transition: all 0.3s ease-in-out;
+        font-size: 10px;
+        margin:0;
     }
     .section-2 .list-products .item ul{
         padding:5px;
-        left: calc((100% - 82px)/2);
+        left: calc((100% - 76px)/2);
         bottom: 20px;
   }
     .section-2 .list-products .item .price{
@@ -165,5 +170,17 @@
     .info .card_2 .car_decs {
         margin-bottom: 10px;
         color: #a1a1a1;
+    }
+}
+@media (max-width:324px) {
+    #dropdown{
+        width: 50%;
+        font-size: 8px;
+        padding:4px 0;
+    }
+    #sort-options{
+        width: 50%;
+        font-size: 8px;
+        padding: 4px 0;
     }
 }

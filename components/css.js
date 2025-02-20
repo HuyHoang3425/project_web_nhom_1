@@ -31,10 +31,10 @@ header a {
     color: #D9D9D9;
     position: relative; 
 }
-header a:hover{
+header li a:hover{
     color:#FFCA08;
 }
-header a:hover::after{
+header li a:hover::after{
     display: block;
 }
 a.showafter{
@@ -43,7 +43,7 @@ a.showafter{
 a.showafter::after{
     display: block;
 }
-header a::after{
+header li a::after{
     content: "";
     width: 10px;
     height: 10px;
@@ -303,7 +303,7 @@ hr{
     bottom:10px;
     left: 10px;
     font-size: 30px;
-    z-index: 9999;
+    z-index: 999;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -311,7 +311,6 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
 }
 
 .chat .cmt{
@@ -524,7 +523,24 @@ footer p{
 .gap{
     height: 100px;
 }
+<<<<<<< HEAD
 
+=======
+/* overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none;
+}
+.hidden{
+    overflow:hidden;
+}
+>>>>>>> main
 
 
 @media (max-width: 1240px) {
@@ -692,5 +708,5 @@ footer p{
     {
         display: none;
     }
-}git ad
+}
 `
