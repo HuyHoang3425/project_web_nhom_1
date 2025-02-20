@@ -523,6 +523,9 @@ footer p{
 .gap{
     height: 100px;
 }
+<<<<<<< HEAD
+
+=======
 /* overlay */
 .overlay {
     position: fixed;
@@ -537,6 +540,7 @@ footer p{
 .hidden{
     overflow:hidden;
 }
+>>>>>>> main
 
 
 @media (max-width: 1240px) {
