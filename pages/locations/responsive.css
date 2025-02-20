@@ -94,8 +94,32 @@
   .gap_section_3 {
     height: 140px;
   }
+     #section_6 input,
+     select {
+       width: 200px;
+     }
+  
+     #section_6 textarea {
+       width: 400px;
+       height: 170px;
+     }
 }
 @media (max-width: 576px) {
+  .flex {
+      flex-direction: column;
+      /* align-items: center; */
+    }
+  #section_6 input,
+    select {
+      width: 300px;
+    }
+  
+    #section_6 textarea {
+      width: 300px;
+      height: 170px;
+    }
+}
+@media (max-width: 480px) {
   .gap_above {
     height: 52px;
   }
@@ -151,13 +175,11 @@
   }
   #section_6 input,
   select {
-    width: 320px;
+    width: 250px;
   }
   #section_6 textarea {
-    width: 320px;
+    width: 250px;
     height: 170px;
   }
 }
-@media (max-width: 576px) {
-  
-}
+
