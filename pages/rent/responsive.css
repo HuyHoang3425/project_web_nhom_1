@@ -1,0 +1,186 @@
+@media (max-width:1240px) {
+}
+@media (max-width:992px) {
+    .section-2 .list-products{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:70px 20px;
+    }
+    .info .card_1,
+    .card_2 {
+        width: 50%;
+        padding: 20px;
+    }
+    .info .card_1 img {
+        width:100%;
+    }
+    .section-2 .list-products .item ul {
+        padding: 6px 12px;
+        left: calc((100% - 144px)/2);
+        bottom: 30px;
+    }
+    .section-2 .list-products .item ul i {
+        padding: 6px 12px;
+    }
+}
+@media (max-width:768px) {
+    .section-1{
+        height: 200px;
+        justify-content: flex-end;
+    }
+    .section-2{
+        padding: 30px;
+    }
+    .section-2 .list-products{
+        grid-template-columns: 1fr 1fr;
+    }
+    .section-2 .option span{
+        font-size: 12px;
+        padding:7px 14px;
+    }
+    .section-2 .option select{
+        font-size: 12px;
+        padding:7px 14px;
+    } 
+    .info.show{
+       align-items: center;
+       flex-direction: column;
+    }
+    .info .card_1,
+    .card_2 {
+        width: 90%;
+    }
+    .card_1{display: flex;align-items: center;justify-content: center;}
+    .info .card_1 img {
+        width:80%;
+    }
+    
+    .info .card_2 .car_name {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .info .card_2 .car_price {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .info .card_2 .car_decs {
+        margin-bottom: 15px;
+        color: #a1a1a1;
+    }
+    .close{
+        width: 30px;
+        height: 30px;
+        font-size: 1.5rem;
+        right: calc(10% - 30px);
+    }
+}
+@media (max-width:576px) {
+    .section-1{
+        height: 200px;
+        justify-content: flex-end;
+    }
+    .section-1 .title{
+        font-size: 32px;
+    }
+    .section-1 .icon{
+        display: flex;
+        gap:10px;
+        color:#FFCA08;
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+    .section-2 .list-products .item{
+        background-color:#1C1601 ;
+        height: auto;
+        padding:5px;
+        position: relative;
+    }
+    .section-2 .list-products .item .btn-buy p{
+        font-size: 12px;
+    }
+    .section-2 .list-products .item .btn-buy i{
+        font-size: 12px;
+    }
+    .section-2 .list-products .item ul{
+        position: absolute;
+        left:calc((100% - 208px)/2);
+        bottom:50px;
+        background-color: #FEFEFE;
+        border-radius: 30px;
+        opacity: 0;
+        /* padding: 0; */
+    }
+    .section-2 .list-products .item ul i{
+        padding:0 6px;
+        border-radius: 20px;
+        font-size: 10px;
+        margin:0;
+    }
+    .section-2 .list-products .item ul{
+        padding:5px;
+        left: calc((100% - 76px)/2);
+        bottom: 20px;
+  }
+    .section-2 .list-products .item .price{
+        padding:5px 10px;
+        font-size: 14px;
+    }
+    .section-2 .list-products .item .discount{
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .section-2 .option{
+        flex-direction: column;
+        gap:10px;
+    }
+    .section-2 .option .select{
+        display: flex;
+        gap:5px;
+        padding:5px 10px;
+    }
+    /* info */
+    .info{
+        padding: 10px;
+    }
+    .info .card_1,
+    .card_2 {
+        padding: 0;
+    }
+    .info .card_1 img {
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .info .card_2 .car_name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .info .card_2 .car_price {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .info .card_2 .car_decs {
+        margin-bottom: 10px;
+        color: #a1a1a1;
+    }
+}
+@media (max-width:324px) {
+    #dropdown{
+        width: 50%;
+        font-size: 8px;
+        padding:4px 0;
+    }
+    #sort-options{
+        width: 50%;
+        font-size: 8px;
+        padding: 4px 0;
+    }
+}

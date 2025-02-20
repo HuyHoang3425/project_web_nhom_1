@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/reset.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="rent.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/jpg" href="../../assets/images/home/head-title.jpg">
+    <title>Rent</title>
 </head>
-<body>
-    
+
+<body id="rent">
+    <!-- section-2 -->
+    <section class="section-2">
+        <div class="option">
+           <span class="showing"></span>
+            <div class="select">
+                <select id="dropdown" name="options">
+                    <option value="option1">16Products</option>
+                    <option value="option2">32 Products</option>
+                    <option value="option3">48 Products</option>
+                    <option value="option5">64 Products</option>
+                    <option value="option6">128 Products</option>
+                </select>
+              
+                <select id="sort-options" name="sort-options">
+                    <option value="popular">Popular</option>
+                    <option value="top-rated">Top Rated</option>
+                    <option value="latest">Sort by Latest</option>
+                    <option value="oldest">Sort by Oldest</option>
+                    <option value="price-low-to-high">Price Low to High</option>
+                    <option value="price-high-to-low">Price High to Low</option>
+                    <option value="highest-discount">Highest Discount</option>
+                    <option value="lowest-discount">Lowest Discount</option>
+                    <option value="a-to-z">Alphabetically, A-Z</option>
+                    <option value="z-to-a">Alphabetically, Z-A</option>
+                </select>
+            </div>
+        </div>
+            <div class="list-products">
+            </div>
+            <div class="modal">
+                <div class="info"></div>
+                <div class="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+           
+    </section>
+    <!-- section-2 -->
+     <div class="gap-rent"></div>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="../../components/HF.js"></script>
 </body>
+
 </html>
