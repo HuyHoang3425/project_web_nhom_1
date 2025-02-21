@@ -1,0 +1,247 @@
+@media (max-width: 1260px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .title-information input{
+        width: 320px;
+    }
+    .title-information select{
+        width: 320px;
+    }
+    .one-title textarea{
+        width: 700px;
+        height: 200px;
+    }
+    .submit button{
+        font-size: 120%;    
+    }
+    
+
+}
+
+
+@media (max-width: 992px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header-contact-us-today p{
+        font-size: 28px;
+    }
+    .contact-us-today-button{
+        font-size:18px;
+    }
+    .customer-information{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .father-two-title{
+        margin-left: 5px;
+        padding-left: 12px;
+    }
+    .title-information input{
+        width: 90%;
+    }
+    .title-information select{
+        width: 90%;
+    }
+    .one-title textarea{
+        width: 650px;
+        height: 200px;
+    }
+    .submit button{
+        font-size: 110%;    
+    }
+}
+
+
+@media (max-width: 877px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .one-title textarea{
+        width: 600px;
+        height: 200px;
+    }
+    .submit button{
+        font-size: 100%;    
+    }
+}
+
+
+@media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .contact-us-today-button{
+        font-size: 16px;
+    }
+    .header-contact-us-today p{
+        font-size: 24px;
+    }
+    .header-contact-us-today {
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    .customer-information{
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+    .father-two-title{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        gap: 0px;
+    }
+    .title-information input{
+        width: 350px;
+    }
+    .title-information select{
+        width: 350px;
+    }
+    .two-title{
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .one-title textarea{
+        width: 350px;
+        height: 200px;
+    }
+    .contact-us-today-content p{
+        font-size: 200%;
+    }
+    .submit button{
+        font-size: 90%;    
+    }
+    .form-input .info{
+        display: flex;
+        flex-direction: column;
+        gap:0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 567px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .contact-us-today-button{
+        font-size: 50%;
+    }
+    .header-contact-us-today p{
+        font-size: 170%;
+    }
+    .submit button{
+        font-size: 80%;    
+    }
+    .customer-information{
+        margin-bottom: 140px;
+    }
+    .form-input {
+        margin: 30px;
+        padding: 20px;
+    }.form-input button{
+        font-size: 16px;
+    }
+    .gap{
+        height: 200px;
+    }
+
+}
+@media (max-width: 420px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header-contact-us-today p{
+        font-size: 170%;
+    }
+    .title-information input{
+        width: 90%;
+    }
+    .title-information select{
+        width: 90%;
+    }
+    .father-two-title{
+        padding-left: 8px;
+    }
+    .one-title textarea{
+        width: 300px;
+    }
+    .submit button{
+        font-size: 70%;    
+    }
+
+}
+@media (max-width: 365px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .one-title textarea{
+        width: 230px;
+    }
+    .submit button{
+        font-size: 60%;    
+    }
+}
+@media (max-width: 312px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header-contact-us-today p{
+        font-size: 110%;
+    }
+    .title-information input{
+        width: 70%;
+    }
+    .title-information select{
+        width: 70%;
+    }
+    .one-title textarea{
+        width: 150px;
+    }
+    .submit button{
+        font-size: 50%;    
+    }
+}
+@media (max-width: 185px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .contact-us-today-button button{
+        font-size: 40%;
+    }
+    .header-contact-us-today p{
+        font-size: 70%;
+    }
+    .title-information input{
+        width: 60%;
+    }
+    .title-information select{
+        width: 60%;
+    }
+    .one-title textarea{
+        width: 80px;
+    }
+    .submit button{
+        font-size: 40%;    
+    }
+}
