@@ -63,6 +63,7 @@ header li a::after{
     background-color: #FFCA08;
     transition: all 0.3s ease-in-out;
 }
+
 .btn:hover{
     background-color: rgba(0, 0, 0, 0);
     color:#FFCA08
@@ -523,9 +524,6 @@ footer p{
 .gap{
     height: 100px;
 }
-<<<<<<< HEAD
-
-=======
 /* overlay */
 .overlay {
     position: fixed;
@@ -540,7 +538,6 @@ footer p{
 .hidden{
     overflow:hidden;
 }
->>>>>>> main
 
 
 @media (max-width: 1240px) {
