@@ -5,9 +5,9 @@
     left: 48px;
     top: 37px;
   }
-    #section_2 .gap_section_2 {
-      height: 135px;
-    }
+  #section_2 .gap_section_2 {
+    height: 135px;
+  }
   .svg-2,
   .svg-4 {
     height: 160px;
@@ -59,9 +59,10 @@
     font-size: 28px;
   }
 
-  #section_3 .gap_3_1,.gap_3_2 {
-      height: 60px;
-    }
+  #section_3 .gap_3_1,
+  .gap_3_2 {
+    height: 60px;
+  }
 
   #section_4 img {
     top: -68px;
@@ -94,29 +95,33 @@
   .gap_section_3 {
     height: 140px;
   }
-     #section_6 input,
-     select {
-       width: 200px;
-     }
-  
-     #section_6 textarea {
-       width: 400px;
-       height: 170px;
-     }
+  #section_6 input,
+  select {
+    width: 200px;
+  }
+
+  #section_6 textarea {
+    width: 400px;
+    height: 170px;
+  }
 }
 @media (max-width: 576px) {
   .flex {
-      flex-direction: column;
-      /* align-items: center; */
-    }
+    flex-direction: column;
+    /* align-items: center; */
+  }
   #section_6 input,
-    select {
-      width: 300px;
-    }
-  
-    #section_6 textarea {
-      width: 300px;
-      height: 170px;
+  select {
+    width: 300px;
+  }
+
+  #section_6 textarea {
+    width: 300px;
+    height: 170px;
+  }
+    .error {
+      color: red;
+      font-size: 10px;
     }
 }
 @media (max-width: 480px) {
@@ -147,7 +152,7 @@
     width: 84%;
     left: 23px;
   }
-       
+
   #section_3 .content_right #toronto_map,
   #california_map,
   #newyork_map {
@@ -181,5 +186,8 @@
     width: 250px;
     height: 170px;
   }
+  .error {
+    color: red;
+    font-size: 8px;
+  }
 }
-
