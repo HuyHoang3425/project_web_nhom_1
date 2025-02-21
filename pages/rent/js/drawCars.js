@@ -43,6 +43,7 @@ export function drawCars() {
             info.forEach((item, index) => {
                 modal.innerHTML = "",
                     item.addEventListener("click", function () {
+                        document.body.style.overflow = "hidden";
                         layout_blur.style.display = "block"
                         modal.classList.add("show");
                         modal.innerHTML = `
@@ -80,7 +81,8 @@ export function drawCars() {
             window.addEventListener("click", function (e) {
                 if (!modal.contains(e.target) && !e.target.classList.contains("fa-magnifying-glass")) {
                     modal.classList.remove("show");
-                    layout_blur.style.display = "none"
+                    layout_blur.style.display = "none";
+                    document.body.style.overflow = "";
                 }
             });
         })
