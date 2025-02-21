@@ -1,0 +1,475 @@
+/* reponsive */
+/*mobile < 740px*/
+@media only screen and (max-width: 46.1875em) {
+  * {
+    /* overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .rental {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .men-rolex {
+    overflow: hidden;
+  }
+
+  .men-rolex img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .word-men-rolex {
+    font-size: 70%;
+    padding-bottom: 165px;
+  }
+
+  .word-rental {
+    font-size: 130%;
+    text-align: center;
+  }
+
+  .row-icon-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hover-car {
+    padding-right: 20px;
+  }
+
+  .word-same-buttom {
+    margin-top: 16px;
+    font-size: 120%;
+  }
+
+  .under-the-same {
+    font-size: 150%;
+    padding-bottom: 12px;
+  }
+
+  .under-the-same span {
+    border-bottom: 2px solid #ffca08;
+  }
+
+  .data {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 32px;
+  }
+
+  .we-belive {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .we-belive p {
+    font-size: 200%;
+    overflow-y: hidden;
+    text-align: center;
+  }
+
+  .content-in-we-belive {
+    width: 100%;
+  }
+
+  .tabs {
+    font-size: 80%;
+    overflow-y: hidden;
+    display: flex;
+    gap: 24px;
+  }
+
+  .tabs button.active {
+    font-size: 140%;
+  }
+
+  .picture-in-we-belive {
+    width: 100%;
+  }
+
+  #picture img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .button-picture {
+    padding-top: 12px;
+  }
+
+  .choose-us {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 32px;
+    overflow: hidden;
+  }
+
+  .picture-choose-us img {
+    width: 400px;
+    height: 370px;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .word-in-picture-choose-us {
+    font-size: 100%;
+    margin-top: -300px;
+    font-size: 60%;
+    padding: 12px 24px;
+    margin-left: 12px;
+  }
+
+  .word-in-picture-choose-us p {
+    font-size: 120%;
+    padding-left: 20px;
+    margin-left: 0px;
+  }
+
+  .word-in-picture-choose-us span {
+    font-size: 120%;
+    padding-left: 20px;
+  }
+
+  .content-in-picture-choose-us i {
+    font-size: 140%;
+    padding: 6px 8px 6px 8px;
+    margin-top: -300px;
+    margin-left: 24px;
+  }
+
+  .title-content-chosse-us p {
+    font-size: 80%;
+    padding-top: 12px;
+    text-align: center;
+    overflow-y: hidden;
+  }
+
+  .word-content-choose-us {
+    text-align: center;
+  }
+
+  .data-choose-us {
+    overflow-y: hidden;
+  }
+
+  .button-partners {
+    font-size: 120%;
+  }
+
+  .title-partners {
+    font-size: 150%;
+    overflow-y: hidden;
+  }
+
+  .logo-partners {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .partners {
+    padding-bottom: 0px;
+  }
+
+  .footer {
+    margin-top: 1000px;
+  }
+
+  .data-son {
+    overflow-y: hidden;
+  }
+}
+
+/*tablet 740px->1024px*/
+/* @media only screen and (min-width: 740px) and (max-width: 1024px) { */
+@media (max-width: 1024px) {
+  * {
+    /* overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .rental {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .men-rolex img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .under-the-same {
+    font-size: 28px;
+  }
+  .data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 0px;
+    padding: 80px 100px 0px 100px;
+  }
+  .cardo {
+    padding-bottom: 0px;
+  }
+  .cardo p {
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+  .cardo .cardo_span {
+    background-color: #f3bf07;
+    /* font-weight: 500; */
+    border-radius: 30px;
+    padding: 10px 20px;
+  }
+  .we-belive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-in-we-belive {
+    width: 100%;
+  }
+
+  .content-in-we-belive p {
+    overflow-y: hidden;
+  }
+  .content-in-we-belive p:first-child {
+    font-size: 28px;
+  }
+  .tabs {
+    overflow-y: hidden;
+    display: flex;
+    gap: 40px;
+    font-size: 140%;
+  }
+  .tabs button {
+    font-size: 18px;
+  }
+  .tabs button.active {
+    font-size: 24px;
+  }
+
+  .picture-in-we-belive {
+    width: 800px;
+  }
+
+  #picture img {
+    width: 700px;
+    height: 500px;
+  }
+
+  .tab-picture {
+    width: 700px;
+  }
+
+  .tab-picture img {
+    width: 100%;
+    height: 100%;
+  }
+  .title-content-chosse-us {
+    font-size: 28px;
+  }
+  .choose-us {
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .picture-choose-us {
+    width: 800px;
+    height: 800px;
+    overflow-y: hidden;
+  }
+
+  .picture-choose-us img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow-y: hidden;
+  }
+
+  .content-in-picture-choose-us {
+    padding-left: 80px;
+    margin-top: 240px;
+    margin-left: -32px;
+    font-size: 150%;
+  }
+
+  .content-in-picture-choose-us i {
+    margin-left: 80px;
+    font-size: 220%;
+    margin-left: 120px;
+  }
+
+  .content-in-picture-choose-us p {
+    padding-left: 32px;
+  }
+
+  .content-in-picture-choose-us span {
+    padding-left: 32px;
+  }
+
+  .title-content-chosse-us p {
+    overflow-y: hidden;
+  }
+
+  .data-son {
+    overflow-y: hidden;
+  }
+
+  .title-partners p {
+    overflow-y: hidden;
+  }
+
+  .logo-partners {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .title-partners {
+    font-size: 28px;
+  }
+  .partners {
+    padding-bottom: 200px;
+  }
+}
+@media (max-width: 992px) {
+  .cardo span {
+    font-size: 21px;
+  }
+  .picture-in-we-belive {
+    width: 100%;
+  }
+  .tab-picture {
+    width: 100%;
+  }
+  #picture img {
+    width: 100%;
+    height: 350px;
+  }
+  .picture-choose-us {
+    width: 100%;
+    height: auto;
+  }
+  .content-in-picture-choose-us {
+    margin-top: 50px;
+    margin-left: -8%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .partners {
+    padding-bottom: 240px;
+  }
+}
+
+@media (max-width: 576px) {
+  .word-rental {
+    font-size: 20px;
+  }
+  .icon-and-content p {
+    font-size: 15px;
+  }
+  .under-the-same,
+  .content-in-we-belive p:first-child,
+  .title-partners {
+    font-size: 26px;
+  }
+  .data {
+    padding: 0px 32px 0px 32px;
+    column-gap: 8px;
+  }
+  .cardo p {
+    font-size: 24px;
+  }
+  .cardo .cardo_span {
+    padding: 10px 2px;
+  }
+  .cardo span {
+    font-size: 12px;
+  }
+  .tabs {
+    gap: 20px;
+  }
+  .tabs button {
+    font-size: 14px;
+  }
+  .tabs button.active {
+    font-size: 18px;
+  }
+  .content-in-we-belive {
+    padding: 0px 32px;
+  }
+  .tab-content active {
+    font-size: 20px;
+  }
+  .picture-in-we-belive {
+    width: 100%;
+    margin-left: 5%;
+  }
+  #picture img {
+    width: 85%;
+    height: 215px;
+  }
+  .button-picture {
+    margin-left: -48px;
+  }
+  .choose-us {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .content-in-picture-choose-us {
+    margin-top: -6px;
+    margin-left: -36%;
+  }
+
+  .word-in-picture-choose-us {
+    padding: 8px 24px;
+    line-height: 20px;
+  }
+  .title-content-chosse-us {
+    font-size: 26px;
+  }
+  .word-content-choose-us {
+    font-size: 18px;
+  }
+  .button-partners,
+  .word-same-buttom {
+    font-size: 16px;
+  }
+  .logo-partners {
+    gap: 25px;
+  }
+
+  .title-partners {
+    padding-bottom: 30px;
+  }
+  .private-logo-partners img {
+    width: 80%;
+  }
+  .partners {
+    padding-bottom: 160px;
+  }
+  .picture-in-we-belive {
+    width: 98%;
+    margin-left: 5%;
+  }
+}
