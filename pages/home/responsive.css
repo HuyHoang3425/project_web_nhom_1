@@ -167,13 +167,6 @@
     .section-1 .background-1 .content .title {
         font-size: 55px;
     }
-
-    .section-1 .background-2 .title {
-        font-size: 55px;
-        top: 35%;
-        left: calc((100% - 765.6px) / 2);
-    }
-
     .svg-1 {
         height: 100px;
     }
@@ -201,15 +194,12 @@
         width: 500px;
         height: auto;
     }
-
-    .section-1 .background-2 .btn {
-        left: calc((100% - 220.66px)/2);
-    }
-
     .section-1 .background-2 .text-blur {
         width: 700px;
     }
-
+    .section-1 .background-2 .title{
+        font-size: 48px;
+    }
     .section-1 .car-1 {
         right: 50px;
     }
@@ -336,7 +326,9 @@
     header img {
         width: 120px;
     }
-
+    header .btn-i{
+        gap:0;
+    }
     /* header */
 
     /* section-1 */
@@ -353,13 +345,6 @@
     .section-1 .background-1 .content .title {
         font-size: 38px;
     }
-
-    .section-1 .background-2 .title {
-        font-size: 38px;
-        top: 35%;
-        left: calc((100% - 528.96px) / 2);
-    }
-
     .section-1 .background-1 .item-row {
         font-size: 9px;
     }
@@ -384,7 +369,9 @@
     .section-1 .background-2 .text-blur {
         width: 500px;
     }
-
+    .section-1 .background-2 .title{
+        font-size: 36px;
+    }
     /* section-1 */
 
     /* .section-2 */
@@ -580,6 +567,15 @@
         height: 50px;
     }
 
+    .text-question {
+       margin-left: 20px;
+       margin-right: 20px;
+    }
+    .title {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     /* header */
     .bar .social {
         font-size: 12px;
@@ -606,13 +602,6 @@
         font-size: 26px;
         margin-bottom: 20px;
     }
-
-    .section-1 .background-2 .title {
-        font-size: 26px;
-        top: 35%;
-        left: calc((100% - 361.93px) / 2);
-    }
-
     .section-1 .background-1 .item-row {
         gap: 5px;
     }
@@ -635,17 +624,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
-    .section-1 .background-2 .btn {
-        left: calc((100% - 141.43px)/2);
-        top: 40%
-    }
-
     .section-1 .background-2 .text-blur {
         width: 300px;
         top: 38%;
     }
-
+    .section-1 .background-2 .title{
+        font-size: 32px;
+    }
     /* section-1 */
 
     /* .section-2 */

@@ -36,7 +36,7 @@ export const Header =`
                 <li><a class="showafter" href="../home/index.html">Home</a></li>
                 <li><a href="../rent/index.html">Rent</a></li>
                 <li><a href="../locations/index.html">Locations</a></li>
-                <li><a href="../gold rewards/index.html">Gold Rewards</a></li>
+                <li><a href="../goldRewards/index.html">Gold Rewards</a></li>
                 <li><a href="../about/index.html">About</a></li>
                 <li class="dropdown">
                     <a href="#">Pages</a>
@@ -60,7 +60,7 @@ export const Header =`
         <div class="btn-i">
             <i class="fa-solid fa-bars-staggered">
             </i>
-            <<a href="../contact/index.html"><button class="btn">Request a Car</button></a>
+            <a href="../contact/index.html"><button class="btn">Request a Car</button></a>
         </div>
         <ul class="bar" id="bar">
             <div class="wrap">
@@ -70,7 +70,7 @@ export const Header =`
                 <hr>
                 <li class="li"><a href="../locations/index.html">Locations</a></li>
                 <hr>
-                <li class="li"><a href="../gold rewards/index.html">Gold Rewards</a></li>
+                <li class="li"><a href="../goldRewards/index.html">Gold Rewards</a></li>
                 <hr>
                 <li class="li"><a href="../about/index.html">About</a></li>
                 <hr>
@@ -92,6 +92,7 @@ export const Header =`
             <i class="fa-solid fa-xmark"></i>
         </button>
     </header>
+    <!-- header -->
     <!-- header -->
         <section class="section-1">
             <div class="title">Rent</div>

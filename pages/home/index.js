@@ -113,10 +113,6 @@ buttons.forEach((button, index) => {
 });
 refresh();
 
-
-
-
-
 // slider
 const slider = document.querySelector(".slider");
 const list = document.querySelector(".slider .list");
