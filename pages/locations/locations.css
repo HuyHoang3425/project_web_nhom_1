@@ -167,11 +167,12 @@ body{
 /* section 5 */
 
 /* section 6 */
-#section_6{
+#section_6 {
     display: flex;
     justify-content: center;
 }
-#section_6 form{
+
+#section_6 form {
     background-color: #1C1601;
     padding: 50px 50px 30px;
     margin-bottom: 60px;
@@ -179,31 +180,44 @@ body{
     box-shadow: 20px 20px 0px 0px #A7A7A740;
     width: max-content;
 }
-#section_6 label{
+
+#section_6 label {
     font-size: 12px;
     color: #a0a0a0;
     margin-left: 12px;
 }
-#section_6 input, textarea, select{
+
+#section_6 input,
+textarea,
+select {
     padding: 15px 25px;
     border-style: solid;
     border-radius: 25px;
     outline: none;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     font-size: 14px;
     color: #595959;
-    border: none;
+    border: 1px solid #1c1601;
 }
 
-#section_6 textarea{
+#section_6 textarea {
     resize: none;
 }
 
-#section_6 .btn_section6{
+#section_6 .btn_section6 {
     display: flex;
     justify-content: center;
     margin-top: 12px;
 }
-.section-1 .title{
-    line-height:normal;
+
+.section-1 .title {
+    line-height: normal;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    opacity: 0;
 }
