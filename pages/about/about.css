@@ -1,0 +1,504 @@
+::selection {
+    background: #FFCA08;
+    color: rgb(255, 255, 255);
+}
+
+/* car rental */
+.rental {
+    padding-top: 160px;
+    margin-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.men-rolex {
+    position: relative;
+}
+
+.men-rolex img {
+
+    width: 380px;
+    height: 460px;
+    object-fit: cover;
+    border: solid 10px #FFCA08;
+    border-radius: 20px;
+}
+
+.word-men-rolex {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 230px;
+    left: 180px;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.word-men-rolex p {
+    font-size: 240%;
+    font-weight: 300;
+}
+
+.word-men-rolex span {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.word-rental {
+    color: #666666;
+    line-height: 150%;
+    font-size: x-large;
+}
+
+.content-and-icon {
+    padding-top: 8px;
+}
+
+/* poiner icon car */
+.icon-and-content {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-and-content i {
+    color: #FFCA08;
+    font-size: x-large;
+    border: solid 3px black;
+    padding: 8px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.icon-and-content p {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 120%;
+}
+
+.hover-car :hover {
+    border: solid 3px #FFCA08;
+    background-color: white;
+    cursor: pointer;
+}
+
+.row-icon-content {
+    display: flex;
+    gap: 60px;
+    padding-top: 50px;
+}
+
+.icon-colum {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* expert-stats */
+.expert-stats {
+    background-color: #1C1601;
+    margin-top: -11px;
+    text-align: center;
+}
+
+.word-same-buttom {
+    display: inline-block;
+    background-color: #F1F1F1;
+    color: #52526A;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.5em;
+}
+
+.under-the-same {
+    color: #F1F1F1;
+    font-size: xxx-large;
+    padding-top: 48px;
+    font-weight: 500;
+}
+
+.under-the-same span {
+    color: #FFCA08;
+    border-bottom: 4px solid #FFCA08;
+    padding-bottom: 3px;
+}
+
+.cardo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    animation: example 2s;
+    transition: transform 0.3s ease;
+}
+.cardo div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.data {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap:50px
+}
+.data .cardo{
+width: calc(25%);
+}
+.cardo p {
+    font-size: 600%;
+    color: white;
+    font-weight: 200;
+}
+
+.cardo span {
+    font-size: 150%;
+    background-color: #F3BF07;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+.cardo:hover p {
+    color: black;
+    background-color: #F3BF07;
+    border-radius: 20px;
+}
+
+.cardo:hover span {
+    background-color: #F1F1F1;
+}
+
+.cardo:hover {
+    transform: translateY(-10px);
+}
+
+@keyframes example {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*We-belive*/
+.we-belive {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    gap: 52px;
+    margin-bottom: 0px;
+}
+
+.content-in-we-belive {
+    width: 50%;
+}
+
+.content-in-we-belive p {
+    font-size: 350%;
+    margin-bottom: 48px;
+    font-weight: 450;
+}
+
+.content-in-we-belive span {
+    color: #FFCA08;
+    border-bottom: 4.5px solid #FFCA08;
+}
+
+/* Edit-button-content-buttom */
+.tabs {
+    display: flex;
+    gap: 48px;
+    border-bottom: 1px solid #b0b0cf;
+}
+
+.icon-title {
+    display: flex;
+    gap: 12px;
+}
+
+.tabs button {
+    cursor: pointer;
+    border-style: none;
+    background-color: #FFFFFF;
+    font-size: 140%;
+    color: #464444;
+    font-weight: 450;
+    padding-bottom: 16px;
+    transition: all 0.5s ease-in-out;
+}
+
+#content {
+    margin-top: 44px;
+    color: #666666;
+    font-size: 130%;
+    line-height: 32px;
+}
+
+.tabs button:hover {
+    color: #5784BA;
+}
+
+.tabs button.active {
+    color: #FFCA08;
+    border-bottom: 3px solid #FFCA08;
+    margin-bottom: -1px;
+    font-size: 200%;
+}
+
+/* edit-picture-in-we-belive */
+.picture-in-we-belive {
+    width: 50%;
+}
+#picture img {
+    width: 650px;
+    height: 500px;
+    object-fit: contain;
+}
+.button-picture {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.button-picture button {
+    color: #aaa6a6;
+    border-style: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button-picture button:hover {
+    color: black;
+}
+
+.button-picture button.active {
+    color: black;
+}
+
+
+
+/* choose us */
+.choose-us {
+    margin-top: -20px;
+    background-color: #1c1601;
+    display: flex;
+    gap: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+/* choose us picture */
+.picture-choose-us{
+    position: relative;
+}
+.picture-choose-us img {
+    /* position: relative; */
+    width: 550px;
+    height: 600px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.content-in-picture-choose-us {
+    position: absolute;
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    bottom:20%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 70%;
+
+}
+
+.word-in-picture-choose-us {
+    background-color: #1C1601;
+    color: white;
+    border-radius: 50px;
+}
+
+.word-in-picture-choose-us p {
+    font-size: 150%;
+    font-weight: 500;
+}
+.wrap{position: relative;width: 100%;height: 100%;  padding: 20px 60px;}
+.content-in-picture-choose-us i {
+    color: black;
+    position: absolute;
+    background-color: #FFCA08;
+    font-size: 300%;
+    padding: 24px 30px;
+    border-radius: 100%;
+    left: 0;
+    top:50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    border: 7px solid #9397a0;
+
+}
+
+/* choose us content */
+.title-content-chosse-us {
+    font-size: 300%;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.title-content-chosse-us p {
+    color: white;
+}
+
+.title-content-chosse-us span {
+    color: #FFCA08;
+    border-bottom: 4px solid #FFCA08;
+}
+
+.word-content-choose-us {
+    padding-top: 52px;
+    color: #687474;
+    font-size: 130%;
+    width: 100%;
+    line-height: 40px;
+}
+
+/* data in choose us */
+.data-choose-us {
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+}
+
+.data-son {
+    border-bottom: 5px solid #52526A;
+    padding-top: 40px;
+
+}
+
+.data-mama {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: -5px;
+    padding-bottom: 20px;
+}
+
+.data-son p {
+    color: white;
+
+}
+
+.data-son span {
+    color: #FFCA08;
+    font-size: 120%;
+    font-weight: 700;
+}
+
+.seventy {
+    width: 77%;
+    background-color: #FFCA08;
+    height: 5px;
+    margin-bottom: -5px;
+}
+
+.ninetytwo {
+    width: 92%;
+    background-color: #FFCA08;
+    height: 5px;
+    margin-bottom: -5px;
+}
+
+.eighttysix {
+    width: 86%;
+    background-color: #FFCA08;
+    height: 5px;
+    margin-bottom: -5px;
+}
+
+.ninetyone {
+    width: 91%;
+    background-color: #FFCA08;
+    height: 5px;
+    margin-bottom: -5px;
+}
+
+/* partners */
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+.button-partners {
+    padding: 16px 32px;
+    background-color: #F1F1F1;
+    border-radius: 50px;
+    font-size: 150%;
+    font-weight: 300;
+    color: #525252;
+}
+
+.title-partners {
+    font-size: 250%;
+    font-weight: 700;
+    padding-top: 32px;
+    padding-bottom: 80px;
+}
+
+.title-partners span {
+    color: #FFCA08;
+    border-bottom: 3.5px solid #FFCA08;
+}
+
+.logo-partners {
+    display: flex;
+    gap: 48px;
+    cursor: pointer;
+}
+
+.private-logo-partners {
+    opacity: 0.35;
+}
+
+.private-logo-partners:hover {
+    opacity: 1.0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* reponsive */
+/*mobile < 740px*/
+@media only screen and (max-width: 46.1875em) {
+    
+}
+
