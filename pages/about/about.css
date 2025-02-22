@@ -237,7 +237,7 @@ width: calc(25%);
     color: #464444;
     font-weight: 450;
     padding-bottom: 16px;
-
+    transition: all 0.5s ease-in-out;
 }
 
 #content {
@@ -262,13 +262,11 @@ width: calc(25%);
 .picture-in-we-belive {
     width: 50%;
 }
-
 #picture img {
     width: 650px;
     height: 500px;
     object-fit: contain;
 }
-
 .button-picture {
     display: flex;
     gap: 12px;
