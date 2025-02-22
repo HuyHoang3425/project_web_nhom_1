@@ -18,14 +18,14 @@
     #picture img{
       width: 100%;
     }
-   .content-in-we-belive{
+   /* .content-in-we-belive{
       font-size: 80%;
-   }
+   } */
    .picture-choose-us img{
       height: 100%;
    }
    .word-same-buttom{
-      font-size: 130%;
+      font-size: 24;
    }
    .partners{
       font-size: 90%;
@@ -75,15 +75,10 @@
     }
     .content-in-we-belive{
         width: 100%;
-        font-size: 70%;
-    }
-    .content-in-we-belive p{
-        /* overflow-y: hidden; */
     }
     .tabs{
         display: flex;
         justify-content: space-between;
-        font-size: 140%;
         gap:0;
     }
     #picture{
@@ -141,9 +136,6 @@
      .partners{
         padding-bottom: 120px;
      }
-     .word-same-buttom{
-      font-size: 120%;
-   }
    .partners{
       font-size: 80%;
    }
@@ -154,14 +146,14 @@
  .wrap{
     padding: 20px 40px;
  }
+ .cardo span{
+    font-size: 16px;
+ }
 }
 @media (max-width: 920px) {
     .choose-us{
         padding: 50px;
     }
-  .word-same-buttom{
-   font-size: 110%;
-}
 .word-in-picture-choose-us{
    font-size: 70%;
 }
@@ -219,12 +211,8 @@
   .hover-car{
       padding-right: 20px;
   }
-  .word-same-buttom{
-      margin-top: 16px;
-      font-size: 100%;
-  }
   .under-the-same{
-      font-size: 150%;
+      font-size: 32px;
       padding-bottom: 12px;
   }
   .under-the-same span{
@@ -248,16 +236,9 @@
       font-size: 200%;
       text-align: center
   }
-  .content-in-we-belive{
-      width: 100%;
+  .content-in-we-belive p{
+    font-size: 32px;
   }
-  .tabs{
-      font-size: 80%;
-  }
-  .tabs button.active{
-      font-size: 140%;
-  }
-
   #picture img{
       width: 90%;
   }
@@ -296,7 +277,7 @@
       font-size: 120%;
   }
   .title-content-chosse-us p{
-      font-size: 80%;
+      font-size: 32px;
       padding-top: 12px;
       text-align: center;
   }
@@ -327,14 +308,14 @@
    .content-in-we-belive{
     padding: 30px;
  }
+ .word-same-buttom{
+    font-size: 18px;
+ }
 }
 @media (max-width: 700px) {
   #picture img{
     width: 100%;
   }
-  .word-same-buttom{
-   font-size: 90%;
-}
 .partners{
    font-size: 50%;
 }
@@ -362,8 +343,9 @@
     width: 100%;
     height: auto;
   }
-  .word-same-buttom{
-   font-size: 80%;
+  .under-the-same{
+    font-size: 26px;
+    padding-bottom: 12px;
 }
 .word-in-picture-choose-us{
    font-size: 50%;
@@ -373,6 +355,12 @@
 }
 .cardo p {
     font-size: 40px;
+}
+.tabs button{
+    font-size: 14px;
+}
+#content{
+    font-size: 16px;
 }
 }
 @media (max-width: 560px) {
@@ -398,6 +386,18 @@
     .title-partners{
         font-size: 32px;
     }
+    .content-in-we-belive p{
+        font-size: 26px;
+      }
+      .title-content-chosse-us p{
+        font-size: 26px;
+      }
+      .word-content-choose-us p{
+        font-size: 18px;
+      }
+      .cardo span {
+        font-size: 12px;
+      }
 }
 @media (max-width: 430px) {
     .logo-partners{
@@ -434,9 +434,6 @@
   .data{
    font-size: 30%;
   }
- .word-same-buttom{
-   font-size: 70%;
-}
 .word-in-picture-choose-us{
    font-size: 40%;
 }

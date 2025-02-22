@@ -27,6 +27,9 @@ if (pageId === 'rent') {
 } else if (pageId === 'about') {
     title.innerHTML = "About"
     content.innerHTML = "About";
+} else if (pageId === 'contact') {
+  title.innerHTML = "Contact"
+  content.innerHTML = "Contact";
 }
 
 const header = document.querySelector("header"); //header
