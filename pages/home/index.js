@@ -232,25 +232,6 @@ window.addEventListener("scroll", checkScroll);
 checkScroll();
 
 
-
-//chat
-const chat = document.querySelector(".chat");
-const cmt = document.querySelector(".chat .cmt");
-const cls = document.querySelector(".chat .cls");
-const message = document.querySelector(".message");
-chat.addEventListener("click",function()
-{
-  if (cmt.style.display === 'block') {
-    cmt.style.display = 'none';  
-    cls.style.display = 'block';
-    message.classList.add("show-screen");
-  } else {
-    cmt.style.display = 'block'; 
-    cls.style.display = 'none';  
-    message.classList.remove("show-screen");
-  }
-})
-
 //slider section-10
 const dots_10 = document.querySelectorAll(".section-10 .card-2 .dots li");
 const item_10 = document.querySelectorAll(".section-10 .card-2 .item");
