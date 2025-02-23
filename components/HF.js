@@ -94,19 +94,48 @@ window.addEventListener("scroll", function () {
 //scroll
 
 //chat
-const chat = document.querySelector(".chat");
-const cmt = document.querySelector(".chat .cmt");
-const cls = document.querySelector(".chat .cls");
-const message = document.querySelector(".message");
-chat.addEventListener("click",function()
-{
-  if (cmt.style.display === 'block') {
-    cmt.style.display = 'none';  
-    cls.style.display = 'block';
-    message.classList.add("show-screen");
-  } else {
-    cmt.style.display = 'block'; 
-    cls.style.display = 'none';  
-    message.classList.remove("show-screen");
-  }
-})
+// const chat = document.querySelector(".chat");
+// const cmt = document.querySelector(".chat .cmt");
+// const cls = document.querySelector(".chat .cls");
+// const message = document.querySelector(".message");
+// chat.addEventListener("click",function()
+// {
+//   if (cmt.style.display === 'block') {
+//     cmt.style.display = 'none';  
+//     cls.style.display = 'block';
+//     message.classList.add("show-screen");
+//   } else {
+//     cmt.style.display = 'block'; 
+//     cls.style.display = 'none';  
+//     message.classList.remove("show-screen");
+//   }
+// })
+
+// <!--Start of Tawk.to Script-->
+// <script type="text/javascript">
+//     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+//     (function(){
+//     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+//     s1.async=true;
+//     s1.src='https://embed.tawk.to/67bad85d7ee229190f9ac09c/1ikotqc0e';
+//     s1.charset='UTF-8';
+//     s1.setAttribute('crossorigin','*');
+//     s0.parentNode.insertBefore(s1,s0);
+//     })();
+// </script>
+// <!--End of Tawk.to Script-->
+// Tạo phần tử script để nhúng mã Tawk.to vào trang
+var tawkScript = document.createElement('script');
+tawkScript.type = 'text/javascript';
+tawkScript.innerHTML = `
+ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67bad85d7ee229190f9ac09c/1ikotqc0e';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+`
+document.body.insertBefore(tawkScript, document.body.firstChild);
